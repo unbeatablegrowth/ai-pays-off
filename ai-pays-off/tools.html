@@ -4,19 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Tools — A.I. Pays Off</title>
-  <meta name="description" content="Free tools for beginners building with AI: Market Validator, PRD Prompt Builder, Free Report, and more. Built for the A.I. Pays Off community." />
+  <meta name="description" content="Free tools for beginners building with AI: Market Validator, Offer Angle Finder, PRD Prompt Builder, Free Report, and more." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: {
-              dark: '#05080f',
-              card: '#0b1220',
-              green: '#10b981',
-              gold: '#fbbf24',
-            }
+            brand: { dark: '#05080f', card: '#0b1220', green: '#10b981', gold: '#fbbf24' }
           }
         }
       }
@@ -31,7 +26,6 @@
 </head>
 <body class="text-white antialiased">
 
-  <!-- Top bar -->
   <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 text-center text-sm font-medium py-2.5 px-4">
     <span class="inline-flex items-center gap-2 flex-wrap justify-center">
       <span>⚡</span>
@@ -41,7 +35,6 @@
     </span>
   </div>
 
-  <!-- Nav -->
   <nav class="border-b border-white/5">
     <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
       <a href="/ai-pays-off/" class="font-semibold tracking-wide text-emerald-400 hover:text-emerald-300 transition">A.I. PAYS OFF</a>
@@ -52,7 +45,6 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <header class="max-w-3xl mx-auto px-5 pt-14 pb-12 text-center">
     <p class="text-emerald-400 text-sm font-semibold tracking-widest uppercase mb-4">Free Tools</p>
     <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-5">
@@ -64,15 +56,25 @@
     </p>
   </header>
 
+  <!-- Pipeline -->
+  <section class="max-w-4xl mx-auto px-5 pb-10">
+    <div class="bg-brand-card border border-white/5 rounded-2xl p-5 sm:p-6 text-center">
+      <p class="text-xs font-semibold tracking-widest uppercase text-slate-500 mb-3">Suggested pipeline</p>
+      <p class="text-sm sm:text-base text-slate-300">
+        Market Validator → Offer Angle Finder → PRD Tool → Build → Stripe
+      </p>
+    </div>
+  </section>
+
   <!-- Live tools -->
   <section class="max-w-4xl mx-auto px-5 pb-6">
     <h2 class="text-sm font-semibold tracking-widest uppercase text-slate-500 mb-5">Available now</h2>
     <div class="grid sm:grid-cols-2 gap-5">
 
-      <!-- Market Validator -->
       <a href="/ai-pays-off/market-validator" class="tool-card bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-7 block glow-green">
         <div class="flex items-start justify-between mb-3">
           <span class="text-xs font-semibold tracking-wide uppercase text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">Live</span>
+          <span class="text-xs text-slate-500">Step 1</span>
         </div>
         <h3 class="text-xl font-bold mb-2">Market Validator</h3>
         <p class="text-slate-400 text-sm leading-relaxed mb-4">
@@ -81,10 +83,22 @@
         <span class="text-emerald-400 text-sm font-medium">Open tool →</span>
       </a>
 
-      <!-- PRD Tool -->
+      <a href="/ai-pays-off/offer-angle-finder" class="tool-card bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-7 block glow-green">
+        <div class="flex items-start justify-between mb-3">
+          <span class="text-xs font-semibold tracking-wide uppercase text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">Live</span>
+          <span class="text-xs text-slate-500">Step 2</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Offer Angle Finder</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Turn a validated market into 3 concrete offer concepts with name, promise, page outline, and price band — ready to build.
+        </p>
+        <span class="text-emerald-400 text-sm font-medium">Open tool →</span>
+      </a>
+
       <a href="/ai-pays-off/prd-tool" class="tool-card bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-7 block">
         <div class="flex items-start justify-between mb-3">
           <span class="text-xs font-semibold tracking-wide uppercase text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">Live</span>
+          <span class="text-xs text-slate-500">Step 3</span>
         </div>
         <h3 class="text-xl font-bold mb-2">PRD Prompt Builder</h3>
         <p class="text-slate-400 text-sm leading-relaxed mb-4">
@@ -93,14 +107,13 @@
         <span class="text-emerald-400 text-sm font-medium">Open tool →</span>
       </a>
 
-      <!-- Free Report -->
-      <a href="/ai-pays-off/free-report" class="tool-card bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-7 block sm:col-span-2">
+      <a href="/ai-pays-off/free-report" class="tool-card bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-7 block">
         <div class="flex items-start justify-between mb-3">
           <span class="text-xs font-semibold tracking-wide uppercase text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full">Live</span>
         </div>
-        <h3 class="text-xl font-bold mb-2">Free Report — Where Most People Get Stuck</h3>
-        <p class="text-slate-400 text-sm leading-relaxed mb-4 max-w-2xl">
-          The map most beginners never get: free vs low-cost vs premium paths, where people actually stall, and the short sequence that moves you from chatting with AI to shipping something real.
+        <h3 class="text-xl font-bold mb-2">Free Report</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Where most people get stuck with AI — free vs low-cost vs premium paths, and the short sequence that moves you from chatting to shipping.
         </p>
         <span class="text-emerald-400 text-sm font-medium">Read the report →</span>
       </a>
@@ -112,19 +125,8 @@
   <section class="max-w-4xl mx-auto px-5 py-12">
     <h2 class="text-sm font-semibold tracking-widest uppercase text-slate-500 mb-5">Coming for the community</h2>
     <div class="grid sm:grid-cols-2 gap-5">
-
       <div class="bg-brand-card/60 border border-white/5 rounded-2xl p-6 opacity-80">
-        <div class="flex items-start justify-between mb-3">
-          <span class="text-xs font-semibold tracking-wide uppercase text-slate-500 bg-white/5 px-2.5 py-1 rounded-full">Soon</span>
-        </div>
-        <h3 class="text-lg font-bold mb-2 text-slate-300">Offer Angle Finder</h3>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          Turn a validated market into 3 concrete offer concepts ready for a sales page.
-        </p>
-      </div>
-
-      <div class="bg-brand-card/60 border border-white/5 rounded-2xl p-6 opacity-80">
-        <div class="flex items-start justify-between mb-3">
+        <div class="mb-3">
           <span class="text-xs font-semibold tracking-wide uppercase text-slate-500 bg-white/5 px-2.5 py-1 rounded-full">Soon</span>
         </div>
         <h3 class="text-lg font-bold mb-2 text-slate-300">Pricing Helper</h3>
@@ -132,9 +134,8 @@
           Simple pricing logic for digital products so you stop undercharging or freezing at “what should I charge?”
         </p>
       </div>
-
       <div class="bg-brand-card/60 border border-white/5 rounded-2xl p-6 opacity-80">
-        <div class="flex items-start justify-between mb-3">
+        <div class="mb-3">
           <span class="text-xs font-semibold tracking-wide uppercase text-slate-500 bg-white/5 px-2.5 py-1 rounded-full">Soon</span>
         </div>
         <h3 class="text-lg font-bold mb-2 text-slate-300">Stripe Path Checklist</h3>
@@ -142,21 +143,10 @@
           Interactive checklist from idea → live payment link, with the exact order of operations.
         </p>
       </div>
-
-      <div class="bg-brand-card/60 border border-white/5 rounded-2xl p-6 opacity-80">
-        <div class="flex items-start justify-between mb-3">
-          <span class="text-xs font-semibold tracking-wide uppercase text-slate-500 bg-white/5 px-2.5 py-1 rounded-full">Soon</span>
-        </div>
-        <h3 class="text-lg font-bold mb-2 text-slate-300">More community tools</h3>
-        <p class="text-slate-500 text-sm leading-relaxed">
-          Additional builders and shortcuts released inside the Skool community for Blueprint members.
-        </p>
-      </div>
-
     </div>
   </section>
 
-  <!-- Bridge CTA -->
+  <!-- CTA -->
   <section class="max-w-3xl mx-auto px-5 pb-16">
     <div class="bg-gradient-to-b from-emerald-500/10 to-transparent border border-emerald-500/25 rounded-2xl p-8 sm:p-10 text-center">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4">Tools remove friction.<br />The Blueprint gives the full sequence.</h2>
@@ -170,18 +160,13 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t border-white/5">
     <div class="max-w-5xl mx-auto px-5 py-9 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-      <div>
-        <div class="font-medium text-slate-400">A.I. PAYS OFF</div>
-        <div class="text-[10px] text-slate-600 mt-1">A Futuremakers product</div>
-      </div>
-      <div class="flex gap-6">
-        <a href="/ai-pays-off/prd-tool" class="hover:text-white transition">PRD Tool</a>
-        <a href="/ai-pays-off/market-validator" class="hover:text-white transition">Market Validator</a>
-        <a href="/ai-pays-off/free-report" class="hover:text-white transition">Free Report</a>
+      <div class="font-medium text-slate-400">A.I. PAYS OFF <span class="text-slate-600">· A Futuremakers product</span></div>
+      <div class="flex flex-wrap justify-center gap-5">
         <a href="/ai-pays-off/" class="hover:text-white transition">Blueprint</a>
+        <a href="/ai-pays-off/free-report" class="hover:text-white transition">Free Report</a>
+        <a href="/" class="hover:text-white transition">Futuremakers</a>
       </div>
       <div>© 2026 · Built for people who ship</div>
     </div>
