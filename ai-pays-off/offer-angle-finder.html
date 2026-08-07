@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offer Angle Finder — A.I. Pays Off</title>
+  <meta name="description" content="Turn a validated market into 3 concrete offer concepts ready for a sales page. Free tool from A.I. Pays Off." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { dark: '#05080f', card: '#0b1220', green: '#10b981', gold: '#fbbf24' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #05080f; }
+    .glow-green { box-shadow: 0 0 40px rgba(16, 185, 129, 0.12); }
+    textarea:focus, input:focus, select:focus {
+      outline: none; border-color: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+    }
+  </style>
+</head>
+<body class="text-white antialiased">
+
+  <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 text-center text-sm font-medium py-2.5 px-4">
+    <span class="inline-flex items-center gap-2 flex-wrap justify-center">
+      <span>⚡</span>
+      <span>FIRST 50 BUYERS GET LIFETIME COMMUNITY ACCESS</span>
+      <span class="opacity-70">·</span>
+      <span>47 SPOTS REMAINING</span>
+    </span>
+  </div>
+
+  <nav class="border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="/ai-pays-off/" class="font-semibold tracking-wide text-emerald-400 hover:text-emerald-300 transition">A.I. PAYS OFF</a>
+      <div class="flex items-center gap-4 sm:gap-5 text-sm">
+        <a href="/ai-pays-off/tools" class="text-slate-400 hover:text-white transition">Tools</a>
+        <a href="/ai-pays-off/" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-4 py-2 rounded-lg transition">Get the Blueprint</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="max-w-3xl mx-auto px-5 pt-14 pb-10 text-center">
+    <p class="text-emerald-400 text-sm font-semibold tracking-widest uppercase mb-4">Free Tool</p>
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-5">
+      Turn a market into<br />
+      <span class="text-emerald-400">3 offer angles you can ship</span>
+    </h1>
+    <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+      Most people stop at “I found a niche.”  
+      This tool builds a focused brief you can paste into Grok to get concrete offer concepts ready for a page.
+    </p>
+  </header>
+
+  <section class="max-w-3xl mx-auto px-5 pb-10">
+    <div class="bg-brand-card border border-white/5 rounded-2xl p-6 sm:p-7 glow-green">
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        <span class="text-white font-medium">Best used after</span> the Market Validator.  
+        You already have a direction — now turn it into offers that can become a real payment link.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-2xl mx-auto px-5 pb-16">
+    <div class="bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-8">
+      <h2 class="text-xl font-bold mb-6">Answer 5 short questions</h2>
+
+      <form id="angleForm" class="space-y-6" onsubmit="return false;">
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">1. What market / audience are you targeting?</label>
+          <textarea id="market" rows="2" placeholder="e.g. burnt-out freelance designers, new Shopify sellers over 35, teachers building side income…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">2. What painful problem do they already feel?</label>
+          <textarea id="pain" rows="2" placeholder="e.g. inconsistent clients, messy product launches, no time to learn another complicated tool…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">3. What can you help them achieve in a short time?</label>
+          <textarea id="outcome" rows="2" placeholder="e.g. a live simple offer page in a week, a clear pricing system, first 3 outreach messages that don’t feel spammy…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">4. Preferred offer type</label>
+          <select id="offerType" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white text-sm">
+            <option value="">Select…</option>
+            <option value="Digital product (PDF, template, toolkit, checklist)">Digital product (PDF, template, toolkit, checklist)</option>
+            <option value="Simple micro-tool or generator page">Simple micro-tool or generator page</option>
+            <option value="Done-with-you / service-style offer">Done-with-you / service-style offer</option>
+            <option value="Short cohort or community-style offer">Short cohort or community-style offer</option>
+            <option value="Not sure — recommend the fastest to ship">Not sure — recommend the fastest to ship</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">5. Constraints (time, tools, coding, budget)</label>
+          <textarea id="constraints" rows="2" placeholder="e.g. ship in 7 days, no coding, stay under $50/mo tools, solo founder…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <button type="button" onclick="generateAngles()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold py-3.5 rounded-xl transition text-base">
+          Generate My Offer Angles Brief
+        </button>
+      </form>
+
+      <div id="outputSection" class="hidden mt-8">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-lg">Your offer angles brief</h3>
+          <button onclick="copyBrief()" class="text-sm text-emerald-400 hover:text-emerald-300 font-medium">Copy</button>
+        </div>
+        <pre id="output" class="bg-black/50 border border-white/10 rounded-xl p-5 text-sm text-slate-300 whitespace-pre-wrap leading-relaxed max-h-96 overflow-y-auto"></pre>
+        <p class="mt-4 text-slate-400 text-sm">
+          Paste into <span class="text-white">Grok</span>. Ask it to return 3 shippable offer concepts with name, promise, format, and first page outline.
+        </p>
+        <div class="mt-6 p-5 bg-emerald-500/10 border border-emerald-500/25 rounded-xl">
+          <p class="text-sm text-slate-300 mb-3">
+            Picked an angle? Use the <a href="/ai-pays-off/prd-tool" class="text-emerald-400 underline">PRD Tool</a> next, then build the page. The <span class="text-white font-medium">Blueprint</span> gives the full sequence to Stripe.
+          </p>
+          <a href="/ai-pays-off/" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-bold px-5 py-2.5 rounded-lg text-sm transition">
+            Get the Blueprint — $47
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-5 pb-16">
+    <h2 class="text-2xl font-bold text-center mb-8">Suggested pipeline</h2>
+    <div class="grid sm:grid-cols-4 gap-3 text-center text-sm">
+      <div class="bg-brand-card border border-white/5 rounded-xl p-4">
+        <div class="text-emerald-400 font-bold mb-1">1</div>
+        <p class="text-slate-300">Market Validator</p>
+      </div>
+      <div class="bg-brand-card border border-emerald-500/30 rounded-xl p-4">
+        <div class="text-emerald-400 font-bold mb-1">2</div>
+        <p class="text-slate-300">Offer Angle Finder</p>
+      </div>
+      <div class="bg-brand-card border border-white/5 rounded-xl p-4">
+        <div class="text-emerald-400 font-bold mb-1">3</div>
+        <p class="text-slate-300">PRD Tool</p>
+      </div>
+      <div class="bg-brand-card border border-white/5 rounded-xl p-4">
+        <div class="text-emerald-400 font-bold mb-1">4</div>
+        <p class="text-slate-300">Build → Stripe</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-5 py-9 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div class="font-medium text-slate-400">A.I. PAYS OFF <span class="text-slate-600">· A Futuremakers product</span></div>
+      <div class="flex gap-6">
+        <a href="/ai-pays-off/tools" class="hover:text-white transition">Tools</a>
+        <a href="/ai-pays-off/free-report" class="hover:text-white transition">Free Report</a>
+        <a href="/ai-pays-off/" class="hover:text-white transition">Blueprint</a>
+      </div>
+      <div>© 2026 · Built for people who ship</div>
+    </div>
+  </footer>
+
+  <script>
+    function generateAngles() {
+      const market = document.getElementById('market').value.trim() || '[not provided]';
+      const pain = document.getElementById('pain').value.trim() || '[not provided]';
+      const outcome = document.getElementById('outcome').value.trim() || '[not provided]';
+      const offerType = document.getElementById('offerType').value || '[not specified]';
+      const constraints = document.getElementById('constraints').value.trim() || '[none listed]';
+
+      const brief = `OFFER ANGLE FINDER BRIEF
+(Generated for use with Grok)
+
+GOAL
+Turn the market below into 3 concrete, shippable offer concepts. Prefer clarity and speed over cleverness.
+
+MARKET / AUDIENCE
+${market}
+
+PAINFUL PROBLEM THEY ALREADY FEEL
+${pain}
+
+OUTCOME I CAN HELP THEM REACH QUICKLY
+${outcome}
+
+PREFERRED OFFER TYPE
+${offerType}
+
+CONSTRAINTS
+${constraints}
+
+YOUR TASK
+1. Propose 3 distinct offer angles that fit the market and constraints.
+2. For each angle include:
+   - Offer name (plain, benefit-led)
+   - One-sentence promise
+   - Format (what they actually buy)
+   - Who it is for / not for
+   - Why this angle is easier to sell than a generic version of the niche
+   - First page outline (hero headline + 3 section ideas)
+   - Suggested price band (simple: low / mid / premium for this audience)
+3. Rank the 3 by: speed to ship, clarity of promise, and fit to constraints.
+4. End with one recommended “build this first” angle and the single next action for this week.
+
+Rules:
+- No vague coaching offers
+- No “all-in-one platform” ideas
+- Prefer offers that can become a live page + payment link quickly
+- Be direct. No fluff.`;
+
+      document.getElementById('output').textContent = brief;
+      document.getElementById('outputSection').classList.remove('hidden');
+      document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function copyBrief() {
+      const text = document.getElementById('output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        const original = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(() => btn.textContent = original, 1500);
+      });
+    }
+  </script>
+</body>
+</html>
