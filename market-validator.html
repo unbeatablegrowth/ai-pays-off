@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Validator — Find Underserved Markets | A.I. Pays Off</title>
+  <meta name="description" content="Stop guessing. Answer a few questions and get a focused market validation brief you can run through Grok to find underserved angles worth building." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#05080f',
+              card: '#0b1220',
+              green: '#10b981',
+              gold: '#fbbf24',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #05080f; }
+    .glow-green { box-shadow: 0 0 40px rgba(16, 185, 129, 0.12); }
+    textarea:focus, input:focus, select:focus {
+      outline: none;
+      border-color: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+    }
+  </style>
+</head>
+<body class="text-white antialiased">
+
+  <!-- Top bar -->
+  <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 text-center text-sm font-medium py-2.5 px-4">
+    <span class="inline-flex items-center gap-2 flex-wrap justify-center">
+      <span>⚡</span>
+      <span>FIRST 50 BUYERS GET LIFETIME COMMUNITY ACCESS</span>
+      <span class="opacity-70">·</span>
+      <span>47 SPOTS REMAINING</span>
+    </span>
+  </div>
+
+  <!-- Nav -->
+  <nav class="border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-wide text-emerald-400 hover:text-emerald-300 transition">A.I. PAYS OFF</a>
+      <div class="flex items-center gap-4 sm:gap-5 text-sm">
+        <a href="/prd-tool" class="text-slate-400 hover:text-white transition">PRD Tool</a>
+        <a href="/free-report" class="text-slate-400 hover:text-white transition">Free Report</a>
+        <a href="/" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-4 py-2 rounded-lg transition">Get the Blueprint</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="max-w-3xl mx-auto px-5 pt-14 pb-10 text-center">
+    <p class="text-emerald-400 text-sm font-semibold tracking-widest uppercase mb-4">Free Tool</p>
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-5">
+      Stop picking saturated markets.<br />
+      <span class="text-emerald-400">Find the underserved ones.</span>
+    </h1>
+    <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+      Most beginners copy what’s already crowded.  
+      This tool builds a focused validation brief you can paste into Grok to surface angles most people miss.
+    </p>
+  </header>
+
+  <!-- Problem strip -->
+  <section class="max-w-3xl mx-auto px-5 pb-10">
+    <div class="bg-brand-card border border-white/5 rounded-2xl p-6 sm:p-7 glow-green">
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        <span class="text-white font-medium">What usually happens:</span>  
+        You pick a popular niche → build something generic → launch into noise → get silence.  
+        Underserved markets are quieter, clearer, and easier to win — if you know how to look for them.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tool form -->
+  <section class="max-w-2xl mx-auto px-5 pb-16">
+    <div class="bg-brand-card border border-white/10 rounded-2xl p-6 sm:p-8">
+      <h2 class="text-xl font-bold mb-6">Answer 5 short questions</h2>
+
+      <form id="validatorForm" class="space-y-6" onsubmit="return false;">
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">1. What do you already know or have experience with?</label>
+          <textarea id="experience" rows="2" placeholder="e.g. freelancing, parenting, fitness, small business ops, teaching, trades…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">2. Who do you understand better than most people?</label>
+          <textarea id="audience" rows="2" placeholder="e.g. burnt-out teachers, new Shopify sellers, remote workers over 40, first-time founders…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">3. What problems have you solved for yourself or others?</label>
+          <textarea id="problems" rows="2" placeholder="e.g. getting clients without ads, organizing chaotic files, launching a simple offer fast…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">4. Preferred format (pick one)</label>
+          <select id="format" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white text-sm">
+            <option value="">Select…</option>
+            <option value="Digital product (PDF, template, toolkit)">Digital product (PDF, template, toolkit)</option>
+            <option value="Simple software / micro-tool">Simple software / micro-tool</option>
+            <option value="Service or done-with-you offer">Service or done-with-you offer</option>
+            <option value="Community or membership">Community or membership</option>
+            <option value="Not sure yet — recommend based on fit">Not sure yet — recommend based on fit</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-2">5. Any constraints? (time, budget, tools)</label>
+          <textarea id="constraints" rows="2" placeholder="e.g. under 10 hours/week, want to stay under $50/mo in tools, no coding, need something shippable in 7 days…" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm resize-none"></textarea>
+        </div>
+
+        <button type="button" id="generateBtn" onclick="generateBrief()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-bold py-3.5 rounded-xl transition text-base">
+          Generate My Market Validation Brief
+        </button>
+      </form>
+
+      <!-- Output -->
+      <div id="outputSection" class="hidden mt-8">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-lg">Your validation brief</h3>
+          <button onclick="copyBrief()" class="text-sm text-emerald-400 hover:text-emerald-300 font-medium">Copy</button>
+        </div>
+        <pre id="output" class="bg-black/50 border border-white/10 rounded-xl p-5 text-sm text-slate-300 whitespace-pre-wrap leading-relaxed max-h-96 overflow-y-auto"></pre>
+        <p class="mt-4 text-slate-400 text-sm">
+          Paste this into <span class="text-white">Grok</span>. Ask it to research underserved angles, demand signals, and simple offer ideas that fit your constraints.
+        </p>
+        <div class="mt-6 p-5 bg-emerald-500/10 border border-emerald-500/25 rounded-xl">
+          <p class="text-sm text-slate-300 mb-3">
+            Found a promising angle? The <span class="text-white font-medium">A.I. Pays Off Blueprint</span> shows the exact sequence: focused prompt → live page → Stripe.
+          </p>
+          <a href="/" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-bold px-5 py-2.5 rounded-lg text-sm transition">
+            Get the Blueprint — $47
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section class="max-w-3xl mx-auto px-5 pb-16">
+    <h2 class="text-2xl font-bold text-center mb-8">How to use the brief</h2>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <div class="bg-brand-card border border-white/5 rounded-xl p-5 text-center">
+        <div class="text-emerald-400 font-bold text-lg mb-2">1</div>
+        <p class="text-sm text-slate-300">Copy the brief above</p>
+      </div>
+      <div class="bg-brand-card border border-white/5 rounded-xl p-5 text-center">
+        <div class="text-emerald-400 font-bold text-lg mb-2">2</div>
+        <p class="text-sm text-slate-300">Paste into Grok and ask for underserved angles + demand signals</p>
+      </div>
+      <div class="bg-brand-card border border-white/5 rounded-xl p-5 text-center">
+        <div class="text-emerald-400 font-bold text-lg mb-2">3</div>
+        <p class="text-sm text-slate-300">Pick one angle → use the PRD tool → build the page</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-5 py-9 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div class="font-medium text-slate-400">A.I. PAYS OFF</div>
+      <div class="flex gap-6">
+        <a href="/prd-tool" class="hover:text-white transition">PRD Tool</a>
+        <a href="/free-report" class="hover:text-white transition">Free Report</a>
+        <a href="/" class="hover:text-white transition">Blueprint</a>
+      </div>
+      <div>© 2026 · Built for people who ship</div>
+    </div>
+  </footer>
+
+  <script>
+    function generateBrief() {
+      const experience = document.getElementById('experience').value.trim() || '[not provided]';
+      const audience = document.getElementById('audience').value.trim() || '[not provided]';
+      const problems = document.getElementById('problems').value.trim() || '[not provided]';
+      const format = document.getElementById('format').value || '[not specified]';
+      const constraints = document.getElementById('constraints').value.trim() || '[none listed]';
+
+      const brief = `MARKET VALIDATION BRIEF
+(Generated for use with Grok)
+
+CONTEXT
+I want to find underserved markets — not saturated ones. Use the information below to surface specific, realistic angles where demand exists but competition is lighter or poorly served.
+
+MY BACKGROUND / EXPERIENCE
+${experience}
+
+AUDIENCE I UNDERSTAND
+${audience}
+
+PROBLEMS I'VE SOLVED (OR SEEN CLOSELY)
+${problems}
+
+PREFERRED OFFER FORMAT
+${format}
+
+CONSTRAINTS
+${constraints}
+
+YOUR TASK
+1. Identify 4–6 underserved or lightly served market angles that fit the context above.
+2. For each angle, briefly explain:
+   - Who exactly is the buyer
+   - What painful/expensive problem they have
+   - Why current solutions are weak, generic, or missing
+   - A simple offer concept that could be built quickly (page + payment link)
+3. Rank the top 3 by: fit to my background, speed to ship, and clarity of demand signal.
+4. Flag any angles that look saturated or too broad so I can avoid them.
+5. End with one recommended "start here" angle and the first validation step I should take this week.
+
+Be direct. No fluff. Prefer specific niches over vague categories.`;
+
+      document.getElementById('output').textContent = brief;
+      document.getElementById('outputSection').classList.remove('hidden');
+      document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function copyBrief() {
+      const text = document.getElementById('output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        const original = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(() => btn.textContent = original, 1500);
+      });
+    }
+  </script>
+
+</body>
+</html>
