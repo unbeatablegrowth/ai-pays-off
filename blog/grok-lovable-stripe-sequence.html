@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grok → Lovable → Stripe: The Sequence to Ship with AI</title>
+  <meta name="description" content="The exact Grok to Lovable to Stripe sequence to go from idea to payment link without tool-hopping." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#05080f', 900: '#0a0f1c', 800: '#111827' },
+            emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669' },
+            gold: { 300: '#fcd34d', 400: '#fbbf24' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #fbbf24 0%, #34d399 45%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass {
+      background: rgba(17, 24, 39, 0.74);
+      border: 1px solid rgba(52, 211, 153, 0.16);
+      backdrop-filter: blur(14px);
+    }
+    article p { color: #cbd5e1; line-height: 1.8; }
+    article h2 { color: #f8fafc; font-weight: 900; letter-spacing: 0; }
+    article a { color: #34d399; text-decoration: underline; text-underline-offset: 4px; }
+  </style>
+</head>
+<body class="min-h-screen bg-navy-950 text-slate-100 antialiased">
+  <nav class="border-b border-emerald-500/10 bg-navy-950/95">
+    <div class="max-w-5xl mx-auto px-5 py-5 flex items-center justify-between gap-4">
+      <a href="/" class="font-black tracking-wide text-emerald-400 hover:text-emerald-300 transition">Futuremakers</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/blog/" class="text-slate-400 hover:text-white transition">Blog</a>
+        <a href="/ai-pays-off/tools" class="text-slate-400 hover:text-white transition">Tools</a>
+        <a href="/ai-pays-off/" class="text-slate-400 hover:text-white transition">A.I. Pays Off</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="px-5">
+    <header class="max-w-3xl mx-auto pt-14 pb-8 sm:pt-20">
+      <p class="text-gold-400 text-xs font-bold tracking-[0.22em] uppercase mb-4">Field note / The sequence</p>
+      <h1 class="text-4xl sm:text-5xl font-black leading-tight mb-5">
+        Grok → Lovable → Stripe: The Sequence to Ship with AI
+      </h1>
+      <p class="text-lg text-slate-300 leading-relaxed">
+        The tools are not the strategy. The order is the strategy. Idea, Grok PRD, Lovable build, Stripe payment path. Each step gives the next one better instructions so you can turn AI into a payment link without tool-hopping.
+      </p>
+    </header>
+
+    <article class="max-w-3xl mx-auto pb-16">
+      <div class="space-y-6 text-base">
+        <p>
+          Most AI projects break because the order is upside down. Someone opens a builder, types a rough idea, waits for a page, then tries to make sense of what came back. The builder guesses. The user edits. Credits burn. The project becomes a pile of almost-right screens and half-written copy.
+        </p>
+        <p>
+          The A.I. Pays Off sequence is boring on purpose: idea -> Grok PRD -> Lovable -> Stripe. It slows down the first hour so the next several hours are cleaner. If you are already stretched thin, that matters. You do not need a heroic build sprint. You need fewer false starts.
+        </p>
+
+        <h2 class="text-2xl mt-10 mb-3">Step 1: Start with the idea, but do not worship it</h2>
+        <p>
+          The idea is just raw material. Treat it like a draft, not a destiny. Write down the buyer, the painful situation, the result they want, and the smallest useful thing you could sell or deliver. Then challenge it.
+        </p>
+        <p>
+          Ask: who has this problem right now? What are they using instead? What happens if they ignore it? Could they explain the problem in one sentence? Would they pay for a faster answer, a cleaner template, a small tool, a teardown, or a done-with-you path?
+        </p>
+        <p>
+          If those answers are fuzzy, use the free <a href="/ai-pays-off/tools">tools hub</a> to tighten them before you build. The goal is not to produce a perfect business plan. The goal is to have enough clarity that your build tool is not forced to invent the important parts.
+        </p>
+
+        <h2 class="text-2xl mt-10 mb-3">Step 2: Use Grok to Lovable planning before you build</h2>
+        <p>
+          A builder needs more than a wish. It needs a brief. Grok is useful here because you can ask it to pressure-test your assumptions, define the user flow, name the primary action, and turn the concept into an AI PRD for Lovable.
+        </p>
+        <p>
+          A good PRD prompt should include the audience, the problem, the offer, the page sections, the tone, the conversion goal, the constraints, and the things the page should avoid. It should tell the builder what success looks like. It should also keep the scope small enough to ship.
+        </p>
+        <p>
+          If you want a structured starting point, use the <a href="/ai-pays-off/prd-tool">free AI PRD generator</a>. Answer a few questions, copy the output into Grok, refine it, then pass the result into Lovable. This is the Grok to Lovable bridge many people skip.
+        </p>
+
+        <h2 class="text-2xl mt-10 mb-3">Step 3: Move to Lovable when the brief is clear</h2>
+        <p>
+          Lovable is strongest when the prompt already knows what it is asking for. Instead of "build my app," give it the shaped brief. Tell it the first version should be simple, mobile-first, focused on one action, and honest about what is included.
+        </p>
+        <p>
+          This is where a lot of people accidentally overbuild. They ask for dashboards, accounts, automations, user roles, admin areas, and complex workflows before they have one buyer signal. For a first paid test, a focused page can be enough. In many cases, the product can be a PDF, template, consultation, checklist, audit, or tiny tool that proves demand before the bigger build.
+        </p>
+        <p>
+          Your job inside Lovable is not to chase every feature. Your job is to get a working surface where the offer can be understood. Clear headline. Clear problem. Clear deliverable. Clear next action. That is the first build.
+        </p>
+
+        <h2 class="text-2xl mt-10 mb-3">Step 4: Move the idea to Stripe after the offer makes sense</h2>
+        <p>
+          Stripe should not be the first thing you set up. It should be the moment where the offer becomes real. Once your page explains the problem, deliverable, and next step, connect a payment path that matches the promise.
+        </p>
+        <p>
+          Keep it simple. One product. One payment link or checkout flow. One confirmation path. One delivery plan. The point is not to build a perfect commerce machine. The point is to remove the gap between interest and payment.
+        </p>
+        <p>
+          This is also where you should make sure the boring pieces are not ignored: refund language, delivery expectations, support email, and what happens after purchase. Simple is fine. Vague is not.
+        </p>
+
+        <h2 class="text-2xl mt-10 mb-3">The sequence protects your attention</h2>
+        <p>
+          When you follow the Grok Lovable Stripe order, each tool has a job. Grok helps you think. Lovable helps you build. Stripe helps you accept payment. None of them has to carry the whole business on its back.
+        </p>
+        <p>
+          If you are new, read the <a href="/ai-pays-off/free-report">free report</a> first. It explains why people stall and how the map works. Then use the tools to shape your first test. When you want the full checklist, the <a href="/ai-pays-off/">A.I. Pays Off Blueprint</a> puts the sequence in one place.
+        </p>
+      </div>
+
+      <section class="glass rounded-lg p-6 sm:p-7 mt-12 border-emerald-500/25">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/ai-pays-off/logo.jpg" alt="A.I. Pays Off" class="w-12 h-auto rounded-lg border border-emerald-500/20" />
+          <p class="text-[10px] uppercase tracking-[0.22em] text-gold-400 font-black">Next step</p>
+        </div>
+        <h2 class="text-2xl font-black mb-3">Write the PRD before you open the builder.</h2>
+        <p class="text-slate-400 mb-5">Use the PRD Prompt Builder to turn a rough idea into a clearer brief, then come back to the Blueprint when you want the whole sequence.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="/ai-pays-off/prd-tool" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-5 py-3 rounded-lg no-underline transition">Open PRD Tool</a>
+          <a href="/ai-pays-off/tools" class="inline-flex items-center justify-center border border-emerald-500/35 hover:border-emerald-400/70 text-emerald-300 font-semibold px-5 py-3 rounded-lg no-underline transition">Free tools</a>
+          <a href="/ai-pays-off/" class="inline-flex items-center justify-center border border-white/15 hover:border-emerald-400/60 text-slate-200 font-semibold px-5 py-3 rounded-lg no-underline transition">See the Blueprint</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="border-t border-emerald-500/10 px-5 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between text-xs text-slate-600">
+      <p>A Futuremakers product line: A.I. Pays Off</p>
+      <a href="/blog/" class="hover:text-emerald-400 transition">Back to field notes</a>
+    </div>
+  </footer>
+</body>
+</html>
