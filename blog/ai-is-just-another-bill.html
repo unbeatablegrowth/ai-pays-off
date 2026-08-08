@@ -39,9 +39,18 @@
     article p { color: #cbd5e1; line-height: 1.8; }
     article h2 { color: #f8fafc; font-weight: 900; letter-spacing: 0; }
     article a { color: #34d399; text-decoration: underline; text-underline-offset: 4px; }
+    .scarce-bar {
+      background: linear-gradient(90deg, #047857, #10b981, #d4a017, #10b981, #047857);
+      background-size: 200% 100%;
+      animation: shimmer 4s linear infinite;
+    }
+    @keyframes shimmer { 0% { background-position: 0% 0%; } 100% { background-position: 200% 0%; } }
   </style>
 </head>
 <body class="min-h-screen bg-navy-950 text-slate-100 antialiased">
+  <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="block scarce-bar text-navy-950 text-center text-xs sm:text-sm font-bold py-2.5 px-3 tracking-wide hover:opacity-90 transition">
+    🔥 The AI Pays Off Blueprint is $47 — <span class="underline underline-offset-2">Grab It Now →</span>
+  </a>
   <nav class="border-b border-emerald-500/10 bg-navy-950/95">
     <div class="max-w-5xl mx-auto px-5 py-5 flex items-center justify-between gap-4">
       <a href="/" class="font-black tracking-wide text-emerald-400 hover:text-emerald-300 transition">Futuremakers</a>
@@ -64,7 +73,11 @@
       </p>
     </header>
 
-    <article class="max-w-3xl mx-auto pb-16">
+        <article class="max-w-3xl mx-auto pb-16">
+      <div class="glass rounded-xl p-5 mb-8 border border-emerald-500/25 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+        <p class="text-slate-100 font-semibold text-sm sm:text-base">Enjoying this? Get the full Blueprint for $47 →</p>
+        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-5 py-2.5 rounded-lg no-underline transition whitespace-nowrap">Get the Blueprint</a>
+      </div>
       <div class="space-y-6 text-base">
         <p>
           There is a particular kind of pressure that comes from paying for a tool you are not using well. The charge is small enough to ignore once, then familiar enough to become background noise. Chat subscription. Builder subscription. Design tool. Automation tool. Another "must-have" tab. Another promise that this one will finally make things easier.

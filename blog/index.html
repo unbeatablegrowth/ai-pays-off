@@ -37,16 +37,25 @@
       backdrop-filter: blur(14px);
     }
     .glow-btn { box-shadow: 0 0 28px rgba(16, 185, 129, 0.32); }
+    .scarce-bar {
+      background: linear-gradient(90deg, #047857, #10b981, #d4a017, #10b981, #047857);
+      background-size: 200% 100%;
+      animation: shimmer 4s linear infinite;
+    }
+    @keyframes shimmer { 0% { background-position: 0% 0%; } 100% { background-position: 200% 0%; } }
   </style>
 </head>
 <body class="min-h-screen bg-navy-950 text-slate-100 antialiased">
+  <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="block scarce-bar text-navy-950 text-center text-xs sm:text-sm font-bold py-2.5 px-3 tracking-wide hover:opacity-90 transition">
+    🔥 The AI Pays Off Blueprint is $47 — <span class="underline underline-offset-2">Grab It Now →</span>
+  </a>
   <nav class="border-b border-emerald-500/10 bg-navy-950/95">
     <div class="max-w-5xl mx-auto px-5 py-5 flex items-center justify-between gap-4">
       <a href="/" class="font-black tracking-wide text-emerald-400 hover:text-emerald-300 transition">Futuremakers</a>
-      <div class="flex items-center gap-4 text-sm">
-        <span class="hidden sm:inline text-slate-600">A.I. Pays Off field notes</span>
-        <a href="/ai-pays-off/tools" class="text-slate-400 hover:text-white transition">Tools</a>
-        <a href="/ai-pays-off/" class="text-slate-400 hover:text-white transition">Blueprint</a>
+      <div class="flex items-center gap-4 sm:gap-5 text-sm">
+        <a href="/" class="hidden sm:inline text-slate-300 hover:text-white transition">Home</a>
+        <a href="/ai-pays-off/tools" class="text-slate-300 hover:text-white transition">Free Tools</a>
+        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-4 py-2 rounded-lg transition glow-btn whitespace-nowrap">Get the Blueprint – $47</a>
       </div>
     </div>
   </nav>
