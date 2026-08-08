@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Pays Off Blueprint | Turn Vibe Coding Into Real Income</title>
-  <meta name="description" content="The AI Pays Off Blueprint gives you the exact vibe coding sequence that turns AI tools into real income — in 30 days or less. Get it today for $47." />
-  <link rel="canonical" href="https://futuremakers.dev/" />
-
-  <!-- Open Graph / Social -->
+  <title>Futuremakers — Build with AI that actually pays off</title>
+  <meta name="description" content="Futuremakers is the home of practical AI paths. Start free with tools and the starter checklist. When you're ready, the A.I. Pays Off Blueprint maps Grok + Lovable + Stripe into a live payment link." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Futuremakers" />
-  <meta property="og:title" content="AI Pays Off Blueprint | Turn Vibe Coding Into Real Income" />
-  <meta property="og:description" content="The exact vibe coding sequence that turns AI tools into real income — in 30 days or less. Get the Blueprint today for $47." />
+  <meta property="og:title" content="Futuremakers — Build with AI that actually pays off" />
+  <meta property="og:description" content="Practical paths from idea to payment link. Free tools, starter checklist, and the A.I. Pays Off Blueprint." />
   <meta property="og:url" content="https://futuremakers.dev/" />
   <meta property="og:image" content="https://futuremakers.dev/ai-pays-off/promo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI Pays Off Blueprint | Turn Vibe Coding Into Real Income" />
-  <meta name="twitter:description" content="The exact vibe coding sequence that turns AI tools into real income — in 30 days or less. $47 today." />
-  <meta name="twitter:image" content="https://futuremakers.dev/ai-pays-off/promo.jpg" />
-
+  <meta name="twitter:title" content="Futuremakers — Build with AI that actually pays off" />
+  <meta name="twitter:description" content="Practical paths from idea to payment link. Free tools and the A.I. Pays Off Blueprint." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- ConvertKit -->
   <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
   <script>
     tailwind.config = {
@@ -44,230 +38,300 @@
       background: linear-gradient(135deg, #fbbf24 0%, #34d399 45%, #10b981 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-    .price-glow { text-shadow: 0 0 40px rgba(251, 191, 36, 0.55), 0 0 80px rgba(16, 185, 129, 0.25); }
     .glass {
       background: rgba(17, 24, 39, 0.75);
       backdrop-filter: blur(14px);
       border: 1px solid rgba(52, 211, 153, 0.18);
     }
-    .glow-btn { box-shadow: 0 0 28px rgba(16, 185, 129, 0.45), 0 0 60px rgba(251, 191, 36, 0.15); }
-    .glow-btn:hover { box-shadow: 0 0 40px rgba(16, 185, 129, 0.6), 0 0 80px rgba(251, 191, 36, 0.25); }
-    .scarce-bar {
+    .glow-btn {
+      box-shadow: 0 0 28px rgba(16, 185, 129, 0.45), 0 0 60px rgba(251, 191, 36, 0.12);
+    }
+    .glow-btn:hover {
+      box-shadow: 0 0 40px rgba(16, 185, 129, 0.55), 0 0 80px rgba(251, 191, 36, 0.2);
+    }
+    .top-bar {
       background: linear-gradient(90deg, #047857, #10b981, #d4a017, #10b981, #047857);
       background-size: 200% 100%;
-      animation: shimmer 4s linear infinite;
+      animation: shimmer 5s linear infinite;
     }
-    @keyframes shimmer { 0% { background-position: 0% 0%; } 100% { background-position: 200% 0%; } }
+    @keyframes shimmer {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 200% 0%; }
+    }
   </style>
 </head>
 <body class="bg-navy-950 text-slate-100 antialiased">
 
-  <!-- Announcement bar -->
-  <div class="fixed top-0 left-0 right-0 z-50 scarce-bar text-navy-950 text-center text-xs sm:text-sm font-bold py-2.5 px-3 tracking-wide flex items-center justify-center gap-2 flex-wrap">
-    <span>🔥 The AI Pays Off Blueprint is $47</span>
-    <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="underline underline-offset-2 font-black hover:opacity-80 transition">Grab It Now →</a>
+  <!-- Soft announcement — value path, not price scream -->
+  <div class="top-bar text-navy-950 text-center text-xs sm:text-sm font-bold py-2.5 px-3 tracking-wide">
+    Free starter checklist + free tools · Blueprint when you’re ready
   </div>
 
   <!-- Nav -->
-  <nav class="fixed top-[41px] left-0 right-0 z-40 border-b border-emerald-500/10 bg-navy-950/90 backdrop-blur">
-    <div class="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between gap-4">
-      <a href="/" class="font-black tracking-wide text-emerald-400 hover:text-emerald-300 transition">Futuremakers</a>
-      <div class="flex items-center gap-4 sm:gap-6 text-sm">
-        <a href="/" class="hidden sm:inline text-slate-300 hover:text-white transition">Home</a>
-        <a href="/blog/" class="text-slate-300 hover:text-white transition">Blog</a>
-        <a href="/ai-pays-off/tools" class="text-slate-300 hover:text-white transition">Free Tools</a>
-        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-4 py-2 rounded-lg transition glow-btn whitespace-nowrap">Get the Blueprint – $47</a>
-      </div>
+  <header class="border-b border-white/5 bg-navy-950/90 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <a href="/" class="font-black text-lg tracking-tight text-white hover:text-emerald-400 transition">Futuremakers</a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-300">
+        <a href="/" class="text-white font-semibold">Home</a>
+        <a href="/blog/" class="hover:text-emerald-400 transition">Blog</a>
+        <a href="/ai-pays-off/tools" class="hover:text-emerald-400 transition">Free Tools</a>
+        <a href="/ai-pays-off/" class="hover:text-emerald-400 transition">A.I. Pays Off</a>
+      </nav>
+      <a href="/ai-pays-off/#get-blueprint"
+         class="bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-bold text-xs sm:text-sm px-4 py-2 rounded-lg transition glow-btn whitespace-nowrap">
+        Get the Blueprint
+      </a>
     </div>
-  </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="pt-40 sm:pt-44 pb-14 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="text-gold-400 text-xs sm:text-sm font-bold tracking-[0.2em] uppercase mb-5">The vibe coding income system</p>
-      <h1 class="text-4xl sm:text-6xl font-black leading-[1.05] mb-6">
-        Stop Experimenting.<br />
-        <span class="gradient-text">Start Getting Paid With AI.</span>
+  <!-- Hero: parent brand + clear next step -->
+  <section class="px-4 pt-14 pb-16 sm:pt-20 sm:pb-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-gold-400 text-xs sm:text-sm font-bold tracking-[0.2em] uppercase mb-4">A Futuremakers path</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black leading-[1.08] mb-5">
+        AI should earn its place<br />
+        <span class="gradient-text">on your statement.</span>
       </h1>
-      <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-9">
-        The AI Pays Off Blueprint gives you the exact vibe coding sequence that turns AI tools into real income — in 30 days or less.
+      <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto mb-4 leading-relaxed">
+        Most people don’t fail because they’re lazy. They fail because nobody handed them a clear sequence.
       </p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
-        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b"
-           class="flex-1 inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-base px-7 py-4 rounded-xl transition glow-btn uppercase tracking-wide">
-          Get the Blueprint – $47
-        </a>
+      <p class="text-slate-400 text-sm max-w-lg mx-auto mb-10">
+        Futuremakers builds practical paths. Start free. When you’re ready, the <span class="text-emerald-400 font-semibold">A.I. Pays Off Blueprint</span> maps Grok → Lovable → Stripe into a live payment link.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
         <a data-formkit-toggle="e182e1d4fc" href="https://ai-pays-off.kit.com/e182e1d4fc"
-           class="flex-1 inline-flex items-center justify-center border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 hover:bg-emerald-500/10 font-bold text-base px-7 py-4 rounded-xl transition">
-          Get the Free Checklist First
+           class="inline-block bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-base px-8 py-3.5 rounded-xl transition glow-btn">
+          Get the Free Checklist
+        </a>
+        <a href="/ai-pays-off/tools"
+           class="inline-block border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 hover:bg-emerald-500/10 font-bold text-base px-8 py-3.5 rounded-xl transition">
+          Try Free Tools
         </a>
       </div>
-
-      <!-- Social proof bar -->
-      <div class="mt-10 inline-flex items-center gap-3 glass rounded-full px-5 py-2.5">
-        <div class="flex -space-x-2">
-          <span class="w-7 h-7 rounded-full bg-emerald-500/80 border-2 border-navy-950"></span>
-          <span class="w-7 h-7 rounded-full bg-gold-400/80 border-2 border-navy-950"></span>
-          <span class="w-7 h-7 rounded-full bg-emerald-400/80 border-2 border-navy-950"></span>
-          <span class="w-7 h-7 rounded-full bg-emerald-600/80 border-2 border-navy-950"></span>
-        </div>
-        <p class="text-sm text-slate-300 font-medium">Join <span class="text-emerald-400 font-bold">500+ builders</span> already using the Blueprint</p>
-      </div>
+      <p class="mt-6 text-slate-500 text-xs">
+        Prefer the full sequence now?
+        <a href="/ai-pays-off/" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">See the Blueprint →</a>
+      </p>
     </div>
   </section>
 
-  <!-- LEAD MAGNET -->
-  <section id="free-checklist" class="py-14 px-4 bg-navy-900/50">
+  <!-- The problem (short, emotional) -->
+  <section class="px-4 py-12 bg-navy-900/50 border-y border-white/5">
     <div class="max-w-3xl mx-auto">
-      <div class="glass rounded-2xl p-7 sm:p-10 border border-emerald-500/25 grid md:grid-cols-[1fr_auto] gap-6 items-center">
-        <div>
-          <p class="text-[10px] uppercase tracking-[0.22em] text-gold-400 font-black mb-3">Free PDF · No card required</p>
-          <h2 class="text-2xl sm:text-3xl font-black mb-3">The Vibe Coding Quick-Start Checklist</h2>
-          <p class="text-slate-300 leading-relaxed">7 steps to go from AI tinkerer to paid builder — free PDF. The fastest way to see if the AI Pays Off method is for you.</p>
+      <h2 class="text-2xl sm:text-3xl font-black text-center mb-8">You’re not behind. You were never shown the map.</h2>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="glass rounded-xl p-5 border-t-2 border-emerald-500">
+          <p class="text-emerald-400 font-black text-sm mb-2">01</p>
+          <h3 class="font-bold mb-1">Tools stack up</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Subscriptions grow. Results stay theoretical.</p>
         </div>
-        <div class="flex flex-col gap-2 md:w-64">
-          <a data-formkit-toggle="e182e1d4fc" href="https://ai-pays-off.kit.com/e182e1d4fc"
-             class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-6 py-3.5 rounded-xl transition glow-btn text-center">
-            Send Me the Checklist →
-          </a>
-          <p class="text-center text-slate-500 text-xs">Instant email delivery</p>
+        <div class="glass rounded-xl p-5 border-t-2 border-gold-400">
+          <p class="text-gold-400 font-black text-sm mb-2">02</p>
+          <h3 class="font-bold mb-1">Tutorials never end</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Noise without a sequence that ends in a payment.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIBE CODING SEQUENCE -->
-  <section class="py-16 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl sm:text-4xl font-black mb-3">The 5-Phase Vibe Coding Sequence</h2>
-      <p class="text-slate-400 mb-12 max-w-xl mx-auto">The exact journey from AI curiosity to stacked income streams. No fluff. No coding degree required.</p>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 text-left">
-        <div class="glass rounded-xl p-5 border-t-4 border-emerald-500">
-          <p class="text-[10px] font-black text-emerald-400 tracking-widest mb-1">PHASE 01</p>
-          <h3 class="font-black text-lg mb-1">Discover</h3>
-          <p class="text-slate-400 text-xs leading-relaxed">Find your AI-powered niche — the profitable problem only you are positioned to solve.</p>
-        </div>
-        <div class="glass rounded-xl p-5 border-t-4 border-gold-400">
-          <p class="text-[10px] font-black text-gold-400 tracking-widest mb-1">PHASE 02</p>
-          <h3 class="font-black text-lg mb-1">Build</h3>
-          <p class="text-slate-400 text-xs leading-relaxed">Use vibe coding to create your offer fast — a real page and product without writing code.</p>
-        </div>
-        <div class="glass rounded-xl p-5 border-t-4 border-emerald-500">
-          <p class="text-[10px] font-black text-emerald-400 tracking-widest mb-1">PHASE 03</p>
-          <h3 class="font-black text-lg mb-1">Launch</h3>
-          <p class="text-slate-400 text-xs leading-relaxed">Get your first paying customer with a live payment link and a simple outreach playbook.</p>
-        </div>
-        <div class="glass rounded-xl p-5 border-t-4 border-gold-400">
-          <p class="text-[10px] font-black text-gold-400 tracking-widest mb-1">PHASE 04</p>
-          <h3 class="font-black text-lg mb-1">Automate</h3>
-          <p class="text-slate-400 text-xs leading-relaxed">Let AI handle the repeatable work so delivery and follow-up run without you.</p>
-        </div>
-        <div class="glass rounded-xl p-5 border-t-4 border-emerald-500">
-          <p class="text-[10px] font-black text-emerald-400 tracking-widest mb-1">PHASE 05</p>
-          <h3 class="font-black text-lg mb-1">Scale</h3>
-          <p class="text-slate-400 text-xs leading-relaxed">Stack income streams — turn one working offer into a portfolio of paid AI products.</p>
+        <div class="glass rounded-xl p-5 border-t-2 border-emerald-500">
+          <p class="text-emerald-400 font-black text-sm mb-2">03</p>
+          <h3 class="font-bold mb-1">No clear next step</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Idea → brief → build → live link. That order matters.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BLUEPRINT SALES -->
-  <section id="blueprint" class="py-16 px-4 bg-navy-900/60">
+  <!-- Free path first -->
+  <section class="px-4 py-16">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-10">
-        <h2 class="text-3xl sm:text-4xl font-black mb-3">The AI Pays Off Blueprint</h2>
-        <p class="text-slate-400 max-w-xl mx-auto">Everything you need to turn vibe coding into a real, paid business — in one focused system.</p>
+        <p class="text-emerald-400 text-xs font-bold tracking-[0.18em] uppercase mb-2">Start free</p>
+        <h2 class="text-2xl sm:text-3xl font-black mb-3">Win a small step before you buy anything</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Use the tools. Grab the checklist. Come back for the full map when it makes sense.</p>
       </div>
-      <div class="grid md:grid-cols-[1.2fr_1fr] gap-6 items-start">
-        <!-- What's included -->
-        <div class="glass rounded-2xl p-6 sm:p-8">
-          <h3 class="text-lg font-black mb-4 text-emerald-300">What's included</h3>
-          <ul class="space-y-3 text-sm sm:text-base">
-            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold shrink-0">✅</span><span>The exact 5-phase vibe coding sequence</span></li>
-            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold shrink-0">✅</span><span>30-day implementation roadmap</span></li>
-            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold shrink-0">✅</span><span>Prompt templates that actually convert</span></li>
-            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold shrink-0">✅</span><span>Access to the private AI Pays Off community on Skool</span></li>
-            <li class="flex items-start gap-3"><span class="text-emerald-400 font-bold shrink-0">✅</span><span>Ongoing updates as AI tools evolve</span></li>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="glass rounded-2xl p-6 flex flex-col">
+          <p class="text-[10px] font-black text-gold-400 tracking-widest mb-2">CHECKLIST</p>
+          <h3 class="text-xl font-black mb-2">Starter checklist (PDF)</h3>
+          <p class="text-slate-400 text-sm mb-5 flex-1 leading-relaxed">
+            Three pages: open Grok, build with Lovable, create a Stripe payment link. Conversational. Step-by-step. No fluff.
+          </p>
+          <a data-formkit-toggle="e182e1d4fc" href="https://ai-pays-off.kit.com/e182e1d4fc"
+             class="text-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-bold py-3 rounded-xl transition">
+            Email me the checklist
+          </a>
+        </div>
+        <div class="glass rounded-2xl p-6 flex flex-col">
+          <p class="text-[10px] font-black text-emerald-400 tracking-widest mb-2">TOOLS</p>
+          <h3 class="text-xl font-black mb-2">Free tools hub</h3>
+          <p class="text-slate-400 text-sm mb-5 flex-1 leading-relaxed">
+            Market Validator → Offer Angle Finder → PRD Tool. Same pipeline we teach inside the Blueprint — free to use now.
+          </p>
+          <a href="/ai-pays-off/tools"
+             class="text-center border border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-300 font-bold py-3 rounded-xl transition">
+            Open free tools
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product path: AI Pays Off -->
+  <section class="px-4 py-16 bg-navy-900/40 border-y border-white/5">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-gold-400 text-xs font-bold tracking-[0.18em] uppercase mb-2">When you’re ready</p>
+        <h2 class="text-2xl sm:text-3xl font-black mb-3">A.I. Pays Off Blueprint</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">
+          The exact sequence: Grok + Lovable + Stripe. Day 0 setup, prompts, build sprint, payment link, first customers — plus community.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 items-stretch">
+        <div class="glass rounded-2xl p-6">
+          <h3 class="font-black text-lg mb-4 text-emerald-400">What’s inside</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-emerald-400 font-bold">✓</span> Full Blueprint with exact prompts &amp; Day 0–3 sequence</li>
+            <li class="flex gap-2"><span class="text-emerald-400 font-bold">✓</span> Bonus: Instant First Win one-pager</li>
+            <li class="flex gap-2"><span class="text-emerald-400 font-bold">✓</span> Bonus: Real Path Business Setup Map</li>
+            <li class="flex gap-2"><span class="text-emerald-400 font-bold">✓</span> Private Skool community for buyers</li>
+            <li class="flex gap-2"><span class="text-gold-400 font-bold">✓</span> Ongoing tutorials as we add tools — <span class="text-gold-300">no extra charge</span></li>
+            <li class="flex gap-2"><span class="text-emerald-400 font-bold">✓</span> First 50: lifetime community · after: 60 days free</li>
           </ul>
         </div>
-        <!-- Price block -->
-        <div class="glass rounded-2xl p-6 sm:p-8 border-2 border-emerald-500/40 text-center relative overflow-hidden">
-          <div class="absolute top-0 left-0 right-0 h-1.5 scarce-bar"></div>
-          <div class="flex items-center justify-center gap-3 mb-1 mt-2">
-            <span class="text-2xl text-red-500 line-through font-bold">$197</span>
-            <span class="text-6xl font-black text-gold-400 price-glow leading-none">$47</span>
+        <div class="glass rounded-2xl p-6 border-2 border-emerald-500/30 flex flex-col justify-center text-center">
+          <p class="text-[10px] uppercase tracking-[0.2em] text-gold-400 font-black mb-2">Launch access</p>
+          <div class="flex items-center justify-center gap-2 mb-1">
+            <span class="text-xl text-red-400/90 line-through font-bold">$97</span>
+            <span class="text-5xl font-black text-gold-400">$47</span>
           </div>
-          <p class="text-emerald-400 text-xs font-bold mb-5 tracking-wide">TODAY ONLY — LAUNCH PRICE</p>
+          <p class="text-slate-400 text-xs mb-5">One-time · Instant PDF · 30-day action guarantee</p>
           <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b"
-             class="block w-full text-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-lg py-4 rounded-xl transition glow-btn uppercase tracking-wide">
-            Get Instant Access →
+             class="block w-full bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black py-3.5 rounded-xl transition glow-btn mb-3">
+            Get Instant Access — $47
           </a>
-          <div class="mt-4 flex flex-col gap-1 text-xs text-slate-400">
-            <p class="flex items-center justify-center gap-1.5">🔒 Secure checkout via Stripe</p>
-            <p class="flex items-center justify-center gap-1.5">⚡ Instant digital delivery</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKOOL COMMUNITY CTA -->
-  <section class="py-14 px-4">
-    <div class="max-w-3xl mx-auto">
-      <div class="glass rounded-2xl p-7 sm:p-9 border border-gold-400/30 bg-gradient-to-br from-emerald-500/5 to-gold-400/5">
-        <div class="grid md:grid-cols-[1fr_auto] gap-6 items-center">
-          <div>
-            <p class="text-[10px] uppercase tracking-[0.22em] text-gold-400 font-black mb-3">Already have the Blueprint?</p>
-            <h2 class="text-2xl sm:text-3xl font-black mb-4">Join Your Community →</h2>
-            <ul class="space-y-2 text-sm text-slate-300">
-              <li class="flex items-start gap-2"><span class="text-emerald-400">•</span> Get feedback on your offer and page from other builders</li>
-              <li class="flex items-start gap-2"><span class="text-emerald-400">•</span> Accountability so you actually ship in 30 days</li>
-              <li class="flex items-start gap-2"><span class="text-emerald-400">•</span> Wins, prompts, and playbooks shared daily</li>
-            </ul>
-          </div>
-          <a href="https://www.skool.com/ai-pays-off-buyers-3411/about" target="_blank" rel="noopener"
-             class="inline-flex items-center justify-center bg-gold-400 hover:bg-gold-300 text-navy-950 font-black px-7 py-3.5 rounded-xl transition whitespace-nowrap">
-            Join the Community
+          <a href="/ai-pays-off/" class="text-sm text-emerald-400 hover:text-emerald-300 underline underline-offset-2">
+            See the full sales page &amp; video →
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="py-16 px-4 text-center border-t border-emerald-500/10">
-    <div class="max-w-2xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-black mb-4">Ready to make AI actually pay off?</h2>
-      <p class="text-slate-400 mb-8 max-w-lg mx-auto">Grab the Blueprint now, or start free with the Quick-Start Checklist. Either way, you leave with a clear next step.</p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto">
-        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b"
-           class="flex-1 inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-base px-7 py-4 rounded-xl transition glow-btn uppercase tracking-wide">
-          Get the Blueprint – $47
-        </a>
-        <a data-formkit-toggle="e182e1d4fc" href="https://ai-pays-off.kit.com/e182e1d4fc"
-           class="flex-1 inline-flex items-center justify-center border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 hover:bg-emerald-500/10 font-bold text-base px-7 py-4 rounded-xl transition">
-          Get the Free Checklist First
-        </a>
-      </div>
-      <div class="mt-12">
-        <p class="text-slate-500 text-xs mb-2">
-          <a href="/blog/" class="hover:text-emerald-400">Blog</a>
-          <span class="mx-1.5">·</span>
-          <a href="/ai-pays-off/tools" class="hover:text-emerald-400">Free Tools</a>
-          <span class="mx-1.5">·</span>
-          <a href="/ai-pays-off/" class="hover:text-emerald-400">AI Pays Off</a>
-        </p>
-        <p class="text-slate-600 text-[10px]">© 2026 Futuremakers · AI Pays Off</p>
+  <!-- Sequence snapshot -->
+  <section class="px-4 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-black mb-2">The sequence in five moves</h2>
+      <p class="text-slate-400 text-sm mb-8 max-w-lg mx-auto">No coding degree. No bloated stack. Order matters.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-left">
+        <div class="glass rounded-xl p-4 border-t-4 border-emerald-500">
+          <p class="text-[10px] font-black text-emerald-400 mb-1">01</p>
+          <h3 class="font-black text-sm mb-1">Discover</h3>
+          <p class="text-slate-400 text-xs">Validate a real problem before you build.</p>
+        </div>
+        <div class="glass rounded-xl p-4 border-t-4 border-gold-400">
+          <p class="text-[10px] font-black text-gold-400 mb-1">02</p>
+          <h3 class="font-black text-sm mb-1">Build</h3>
+          <p class="text-slate-400 text-xs">Grok brief → Lovable page. No code.</p>
+        </div>
+        <div class="glass rounded-xl p-4 border-t-4 border-emerald-500">
+          <p class="text-[10px] font-black text-emerald-400 mb-1">03</p>
+          <h3 class="font-black text-sm mb-1">Launch</h3>
+          <p class="text-slate-400 text-xs">Stripe payment link in front of humans.</p>
+        </div>
+        <div class="glass rounded-xl p-4 border-t-4 border-gold-400">
+          <p class="text-[10px] font-black text-gold-400 mb-1">04</p>
+          <h3 class="font-black text-sm mb-1">Systemize</h3>
+          <p class="text-slate-400 text-xs">Prompts &amp; simple systems you can reuse.</p>
+        </div>
+        <div class="glass rounded-xl p-4 border-t-4 border-emerald-500 col-span-2 sm:col-span-1">
+          <p class="text-[10px] font-black text-emerald-400 mb-1">05</p>
+          <h3 class="font-black text-sm mb-1">Grow</h3>
+          <p class="text-slate-400 text-xs">Stack what works. Community helps you ship.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Sticky mobile bottom CTA -->
-  <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b"
-     class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-center py-4 tracking-wide uppercase glow-btn">
-    Get the Blueprint – $47 →
-  </a>
-  <div class="sm:hidden h-16"></div>
+  <!-- Community value -->
+  <section class="px-4 py-12">
+    <div class="max-w-3xl mx-auto glass rounded-2xl p-7 sm:p-9 border border-gold-400/25">
+      <p class="text-[10px] uppercase tracking-[0.2em] text-gold-400 font-black mb-3">Buyer community</p>
+      <h2 class="text-2xl font-black mb-3">The value compounds after the PDF</h2>
+      <p class="text-slate-300 text-sm leading-relaxed mb-4">
+        The Blueprint is the map. The community is where you stay accountable, get feedback, and pick up new tutorials as we cover more tools — <span class="text-emerald-300 font-semibold">included, no extra charge</span>.
+      </p>
+      <p class="text-slate-400 text-xs mb-5">First 50 buyers: lifetime access. After that: 60 days free, then optional stay.</p>
+      <a href="https://www.skool.com/ai-pays-off-buyers-3411/about" target="_blank" rel="noopener"
+         class="inline-flex items-center bg-gold-400 hover:bg-gold-300 text-navy-950 font-black px-6 py-3 rounded-xl transition text-sm">
+        Community for buyers →
+      </a>
+    </div>
+  </section>
+
+  <!-- Field notes / blog teaser -->
+  <section class="px-4 py-14 bg-navy-900/30">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <p class="text-emerald-400 text-xs font-bold tracking-[0.18em] uppercase mb-2">From the field notes</p>
+          <h2 class="text-2xl font-black">Blog</h2>
+        </div>
+        <a href="/blog/" class="text-sm text-emerald-400 hover:text-emerald-300 font-semibold">All notes →</a>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <a href="/blog/validate-idea-with-ai.html" class="glass rounded-xl p-5 hover:border-emerald-500/40 transition block">
+          <p class="text-[10px] text-emerald-400 font-bold mb-2">VALIDATE</p>
+          <h3 class="font-bold text-sm mb-2 leading-snug">How to Validate a Business Idea with AI</h3>
+          <p class="text-slate-500 text-xs">Before you waste a week building.</p>
+        </a>
+        <a href="/blog/grok-lovable-stripe-sequence.html" class="glass rounded-xl p-5 hover:border-emerald-500/40 transition block">
+          <p class="text-[10px] text-gold-400 font-bold mb-2">SEQUENCE</p>
+          <h3 class="font-bold text-sm mb-2 leading-snug">Grok → Lovable → Stripe</h3>
+          <p class="text-slate-500 text-xs">The order that ships.</p>
+        </a>
+        <a href="/blog/ai-is-just-another-bill.html" class="glass rounded-xl p-5 hover:border-emerald-500/40 transition block">
+          <p class="text-[10px] text-emerald-400 font-bold mb-2">REALITY</p>
+          <h3 class="font-bold text-sm mb-2 leading-snug">When AI Feels Like Just Another Bill</h3>
+          <p class="text-slate-500 text-xs">And what to do about it.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final dual CTA -->
+  <section class="px-4 py-16 text-center">
+    <h2 class="text-2xl sm:text-3xl font-black mb-3">Leave with a next step.</h2>
+    <p class="text-slate-400 text-sm max-w-md mx-auto mb-8">
+      Checklist and tools cost nothing. The Blueprint is there when you want the full sequence and community.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a data-formkit-toggle="e182e1d4fc" href="https://ai-pays-off.kit.com/e182e1d4fc"
+         class="inline-block border border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-300 font-bold px-8 py-3.5 rounded-xl transition">
+        Free Checklist
+      </a>
+      <a href="/ai-pays-off/#get-blueprint"
+         class="inline-block bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-8 py-3.5 rounded-xl transition glow-btn">
+        Get the Blueprint — $47
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 px-4 py-10">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <p class="font-black text-white mb-1">Futuremakers</p>
+        <p class="text-slate-500 text-xs">Practical AI paths · A.I. Pays Off product line</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-400">
+        <a href="/blog/" class="hover:text-emerald-400">Blog</a>
+        <a href="/ai-pays-off/tools" class="hover:text-emerald-400">Tools</a>
+        <a href="/ai-pays-off/free-report" class="hover:text-emerald-400">Free Report</a>
+        <a href="/ai-pays-off/" class="hover:text-emerald-400">Blueprint</a>
+        <a href="https://www.skool.com/ai-pays-off-buyers-3411/about" class="hover:text-emerald-400">Community</a>
+      </div>
+    </div>
+    <p class="text-center text-slate-600 text-[10px] mt-8">© 2026 Futuremakers · A.I. Pays Off</p>
+  </footer>
 
 </body>
 </html>
