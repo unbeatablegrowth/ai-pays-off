@@ -5,24 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Futuremakers Blog | AI Business Validation, Grok to Lovable, Stripe</title>
   <meta name="description" content="Field notes from Futuremakers and A.I. Pays Off on how to validate a business idea with AI, use the Grok to Lovable workflow, and turn AI into a payment link." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950: '#05080f', 900: '#0a0f1c', 800: '#111827' },
-            emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669' },
-            gold: { 300: '#fcd34d', 400: '#fbbf24' }
-          },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .gradient-text {
@@ -44,10 +26,14 @@
     }
     @keyframes shimmer { 0% { background-position: 0% 0%; } 100% { background-position: 200% 0%; } }
   </style>
+  <link rel="stylesheet" href="/assets/tailwind.css" />
+  <link rel="preload" href="/assets/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="/assets/futuremakers.css" />
+  <script defer src="/assets/futuremakers.js"></script>
 </head>
 <body class="min-h-screen bg-navy-950 text-slate-100 antialiased">
   <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="block scarce-bar text-navy-950 text-center text-xs sm:text-sm font-bold py-2.5 px-3 tracking-wide hover:opacity-90 transition">
-    🔥 The AI Pays Off Blueprint is $47 — <span class="underline underline-offset-2">Grab It Now →</span>
+    The AI Pays Off Blueprint is $47 - <span class="underline underline-offset-2">Grab It Now →</span>
   </a>
   <nav class="border-b border-emerald-500/10 bg-navy-950/95">
     <div class="max-w-5xl mx-auto px-5 py-5 flex items-center justify-between gap-4">
@@ -55,43 +41,55 @@
       <div class="flex items-center gap-4 sm:gap-5 text-sm">
         <a href="/" class="hidden sm:inline text-slate-300 hover:text-white transition">Home</a>
         <a href="/ai-pays-off/tools" class="text-slate-300 hover:text-white transition">Free Tools</a>
-        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-4 py-2 rounded-lg transition glow-btn whitespace-nowrap">Get the Blueprint – $47</a>
+        <a href="https://buy.stripe.com/14A5kDfYdh09aqFdKFeZ20b" class="bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black px-4 py-2 rounded-lg transition glow-btn whitespace-nowrap">Get the Blueprint - $47</a>
       </div>
     </div>
   </nav>
 
   <main>
     <header class="px-5 pt-16 pb-10 sm:pt-20 sm:pb-14">
-      <div class="max-w-5xl mx-auto">
-        <p class="text-gold-400 text-xs sm:text-sm font-bold tracking-[0.22em] uppercase mb-4">Futuremakers / A.I. Pays Off</p>
-        <h1 class="text-4xl sm:text-6xl font-black leading-tight max-w-4xl">
-          Field notes on AI business validation and
-          <span class="gradient-text">payment links</span>
-        </h1>
-        <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
-          Practical notes for people who are tired of collecting tools and want a clear sequence: validate the niche, shape the prompt, build the page, connect Stripe.
-        </p>
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_.95fr] gap-10 lg:gap-16 items-center">
+        <div>
+          <p class="text-gold-400 text-xs sm:text-sm font-bold tracking-[0.22em]  mb-4">Futuremakers field notes</p>
+          <h1 class="text-4xl sm:text-6xl font-black leading-tight">
+            AI ideas that reach<br />
+            <span class="gradient-text">checkout.</span>
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
+            Practical notes for people who are tired of collecting tools and want a clear sequence: validate the niche, shape the prompt, build the page, connect Stripe.
+          </p>
+        </div>
+        <figure class="fm-media-frame">
+          <img
+            src="/assets/futuremakers-workbench.jpg"
+            alt="A builder arranging three idea cards beside a notebook and laptop"
+            class="fm-editorial-image"
+            width="1020"
+            height="680"
+            decoding="async"
+          />
+        </figure>
       </div>
     </header>
 
     <section class="px-5 pb-14">
       <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-5">
         <article class="glass rounded-lg p-6 flex flex-col min-h-[260px]">
-          <p class="text-[10px] uppercase tracking-[0.22em] text-emerald-400 font-bold mb-4">Market first</p>
+          <p class="text-[10px]  tracking-[0.22em] text-emerald-400 font-bold mb-4">Market first</p>
           <h2 class="text-xl font-black mb-3">How to Validate a Business Idea with AI (Before You Build)</h2>
           <p class="text-slate-400 text-sm leading-relaxed flex-1">Use a free AI market validator to check the niche before building another half-finished project.</p>
           <a href="/blog/validate-idea-with-ai.html" class="mt-6 text-emerald-400 hover:text-emerald-300 text-sm font-bold">Read note</a>
         </article>
 
         <article class="glass rounded-lg p-6 flex flex-col min-h-[260px]">
-          <p class="text-[10px] uppercase tracking-[0.22em] text-gold-400 font-bold mb-4">The sequence</p>
+          <p class="text-[10px]  tracking-[0.22em] text-gold-400 font-bold mb-4">The sequence</p>
           <h2 class="text-xl font-black mb-3">Grok → Lovable → Stripe: The Sequence to Ship with AI</h2>
           <p class="text-slate-400 text-sm leading-relaxed flex-1">The order matters. Start with an AI PRD for Lovable, build from that, then move the idea to Stripe.</p>
           <a href="/blog/grok-lovable-stripe-sequence.html" class="mt-6 text-emerald-400 hover:text-emerald-300 text-sm font-bold">Read note</a>
         </article>
 
         <article class="glass rounded-lg p-6 flex flex-col min-h-[260px]">
-          <p class="text-[10px] uppercase tracking-[0.22em] text-emerald-400 font-bold mb-4">The real blocker</p>
+          <p class="text-[10px]  tracking-[0.22em] text-emerald-400 font-bold mb-4">The real blocker</p>
           <h2 class="text-xl font-black mb-3">When AI Feels Like Just Another Bill (And What to Do)</h2>
           <p class="text-slate-400 text-sm leading-relaxed flex-1">If AI feels like noise and every subscription feels like pressure, the missing piece is probably the map.</p>
           <a href="/blog/ai-is-just-another-bill.html" class="mt-6 text-emerald-400 hover:text-emerald-300 text-sm font-bold">Read note</a>
@@ -104,8 +102,8 @@
         <div class="grid md:grid-cols-[1fr_auto] gap-6 items-center">
           <div>
             <div class="flex items-center gap-3 mb-4">
-              <img src="/ai-pays-off/logo.jpg" alt="A.I. Pays Off" class="w-12 h-auto rounded-lg border border-emerald-500/20" />
-              <p class="text-[10px] uppercase tracking-[0.22em] text-gold-400 font-black">Start small</p>
+              <img src="/ai-pays-off/logo.jpg" alt="A.I. Pays Off" width="784" height="1168" class="w-12 h-auto rounded-lg border border-emerald-500/20" />
+              <p class="text-[10px]  tracking-[0.22em] text-gold-400 font-black">Start small</p>
             </div>
             <h2 class="text-2xl sm:text-3xl font-black mb-3">Use the free tools before you build.</h2>
             <p class="text-slate-400 leading-relaxed max-w-2xl">
