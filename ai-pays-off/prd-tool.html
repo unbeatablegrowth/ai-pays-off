@@ -3,23 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PRD Prompt Builder — Grok → Lovable Bridge | A.I. Pays Off</title>
-  <meta name="description" content="Stop wasting credits on vague prompts. Generate a focused PRD-style prompt for Lovable, Bolt, v0, and Cursor — free. Powered by the A.I. Pays Off method." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950: "#05080f", 900: "#0a0f1c", 800: "#111827" },
-            emerald: { 400: "#34d399", 500: "#10b981", 600: "#059669" },
-            gold: { 300: "#fcd34d", 400: "#fbbf24", 500: "#f59e0b" }
-          }
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>PRD Prompt Builder - Grok → Lovable Bridge | A.I. Pays Off</title>
+  <meta name="description" content="Stop wasting credits on vague prompts. Generate a focused PRD-style prompt for Lovable, Bolt, v0, and Cursor - free. Powered by the A.I. Pays Off method." />
   <style>
     body { font-family: Inter, system-ui, sans-serif; }
     .glass {
@@ -43,6 +28,10 @@
       background: linear-gradient(135deg, #10b981, #059669);
     }
   </style>
+  <link rel="stylesheet" href="/assets/tailwind.css" />
+  <link rel="preload" href="/assets/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="/assets/futuremakers.css" />
+  <script defer src="/assets/futuremakers.js"></script>
 </head>
 <body class="bg-navy-950 text-slate-100 antialiased">
 
@@ -50,21 +39,21 @@
   <div class="border-b border-emerald-500/20 bg-navy-900/80">
     <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/ai-pays-off/" class="text-emerald-400 font-bold text-sm tracking-wide hover:text-emerald-300 transition">A.I. PAYS OFF</a>
-      <span class="text-[10px] uppercase tracking-widest text-gold-400 font-semibold">Free Tool</span>
+      <span class="text-[10px]  tracking-widest text-gold-400 font-semibold">Free Tool</span>
     </div>
   </div>
 
   <!-- Hero -->
   <section class="px-4 pt-10 pb-8 sm:pt-14 sm:pb-10">
     <div class="max-w-3xl mx-auto text-center">
-      <p class="text-gold-400 text-xs font-bold tracking-[0.2em] uppercase mb-3">Grok → Lovable Bridge</p>
+      <p class="text-gold-400 text-xs font-bold tracking-[0.2em]  mb-3">Grok → Lovable Bridge</p>
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
         Stop losing money<br class="hidden sm:block" />
         to <span class="text-emerald-400">vague prompts</span>
       </h1>
       <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
         Most people open Lovable, Bolt, or Cursor and type wishes.
-        Credits burn. Pages stay half-built. The focused way starts in Grok —
+        Credits burn. Pages stay half-built. The focused way starts in Grok -
         with a tight PRD-style prompt.
       </p>
     </div>
@@ -73,7 +62,7 @@
   <!-- Pain strip -->
   <section class="px-4 pb-10">
     <div class="max-w-3xl mx-auto glass rounded-2xl p-5 sm:p-6">
-      <p class="text-[10px] uppercase tracking-[0.2em] text-red-400 font-bold mb-3">What usually happens</p>
+      <p class="text-[10px]  tracking-[0.2em] text-red-400 font-bold mb-3">What usually happens</p>
       <div class="grid sm:grid-cols-3 gap-4 text-sm">
         <div>
           <p class="font-bold text-slate-200 mb-1">Vague input</p>
@@ -104,7 +93,7 @@
         <div class="glass rounded-xl p-4 text-center">
           <div class="step-num w-8 h-8 rounded-full flex items-center justify-center text-navy-950 font-black text-sm mx-auto mb-3">2</div>
           <p class="font-bold text-sm mb-1">Paste into builder</p>
-          <p class="text-slate-400 text-xs">Lovable, Bolt, v0, Cursor — they finally have something solid to build from.</p>
+          <p class="text-slate-400 text-xs">Lovable, Bolt, v0, Cursor - they finally have something solid to build from.</p>
         </div>
         <div class="glass rounded-xl p-4 text-center">
           <div class="step-num w-8 h-8 rounded-full flex items-center justify-center text-navy-950 font-black text-sm mx-auto mb-3">3</div>
@@ -118,9 +107,9 @@
   <!-- Tool -->
   <section class="px-4 pb-12">
     <div class="max-w-3xl mx-auto glass rounded-2xl p-5 sm:p-8 border-t-2 border-emerald-500">
-      <p class="text-[10px] uppercase tracking-[0.2em] text-emerald-400 font-bold mb-2">Free tool</p>
+      <p class="text-[10px]  tracking-[0.2em] text-emerald-400 font-bold mb-2">Free tool</p>
       <h2 class="text-2xl font-black mb-1">PRD Prompt Builder</h2>
-      <p class="text-slate-400 text-sm mb-6">Answer four short questions. Get a copy-paste prompt ready for Grok — then for Lovable, Bolt, or Cursor.</p>
+      <p class="text-slate-400 text-sm mb-6">Answer four short questions. Get a copy-paste prompt ready for Grok - then for Lovable, Bolt, or Cursor.</p>
 
       <form id="prdForm" class="space-y-4" onsubmit="return false;">
         <div>
@@ -141,7 +130,7 @@
         </div>
 
         <button type="button" onclick="generatePrompt()"
-                class="w-full bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-base py-3.5 rounded-xl transition glow-btn uppercase tracking-wide">
+                class="w-full bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-black text-base py-3.5 rounded-xl transition glow-btn  tracking-wide">
           Generate my PRD prompt
         </button>
       </form>
@@ -149,7 +138,7 @@
       <!-- Output -->
       <div id="resultArea" class="hidden mt-6">
         <div class="flex items-center justify-between mb-2">
-          <p class="text-xs font-bold text-gold-400 uppercase tracking-wider">Your prompt — copy into Grok</p>
+          <p class="text-xs font-bold text-gold-400  tracking-wider">Your prompt - copy into Grok</p>
           <button type="button" onclick="copyPrompt()" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition">Copy</button>
         </div>
         <textarea id="outputBox" readonly
@@ -164,11 +153,11 @@
     <div class="max-w-3xl mx-auto text-center">
       <p class="text-slate-400 text-sm mb-4 max-w-md mx-auto leading-relaxed">
         This gets you a solid first prompt.
-        The full system walks you from offer → live page → Stripe payment link — plus Real Path business foundations.
+        The full system walks you from offer → live page → Stripe payment link - plus Real Path business foundations.
       </p>
       <a href="/ai-pays-off/"
-         class="inline-block bg-gold-400 hover:bg-gold-300 text-navy-950 font-black text-sm px-8 py-3.5 rounded-xl transition uppercase tracking-wide">
-        See the full A.I. Pays Off Blueprint — $47
+         class="inline-block bg-gold-400 hover:bg-gold-300 text-navy-950 font-black text-sm px-8 py-3.5 rounded-xl transition  tracking-wide">
+        See the full A.I. Pays Off Blueprint - $47
       </a>
       <p class="text-slate-600 text-[10px] mt-3">First 50 buyers get lifetime community access</p>
     </div>
@@ -218,7 +207,7 @@ PAGE REQUIREMENTS
 - Add a simple FAQ that handles the top 3 objections
 
 STYLE
-Premium but not corporate. Dark or high-contrast theme preferred unless the offer needs light. Feels trustworthy and direct — no fake urgency or scammy language.
+Premium but not corporate. Dark or high-contrast theme preferred unless the offer needs light. Feels trustworthy and direct - no fake urgency or scammy language.
 
 OUTPUT
 Give me a single, copy-paste-ready prompt (not a conversation) that a no-code builder can execute to produce the first version of this page.`;

@@ -3,25 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blueprint — A.I. Pays Off</title>
+  <title>Blueprint - A.I. Pays Off</title>
   <meta name="description" content="The sequence: validate, build, and collect payment with Grok, Lovable, and Stripe. For Blueprint buyers." />
   <meta name="robots" content="noindex" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950: '#05080f', 900: '#0a0f1c', 800: '#111827' },
-            emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669' },
-            gold: { 400: '#fbbf24', 500: '#d4a017' }
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; background: #05080f; }
     .prose-body { font-size: 0.95rem; line-height: 1.75; color: #cbd5e1; }
@@ -47,6 +31,10 @@
       flex-shrink: 0;
     }
   </style>
+  <link rel="stylesheet" href="/assets/tailwind.css" />
+  <link rel="preload" href="/assets/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="/assets/futuremakers.css" />
+  <script defer src="/assets/futuremakers.js"></script>
 </head>
 <body class="text-white antialiased">
 
@@ -63,10 +51,10 @@
 
   <!-- Title -->
   <header class="max-w-2xl mx-auto px-5 pt-12 pb-8">
-    <p class="text-emerald-400 text-xs font-semibold tracking-widest uppercase mb-3">Buyer access · Blueprint</p>
+    <p class="text-emerald-400 text-xs font-semibold tracking-widest  mb-3">Buyer access · Blueprint</p>
     <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-4">The sequence</h1>
     <p class="prose-body text-base text-slate-300">
-      This is the map. Not theory — the exact order I use so you can go from idea to a live page with a real Stripe payment link. Read it once. Then do Day 0.
+      This is the map. Not theory - the exact order I use so you can go from idea to a live page with a real Stripe payment link. Read it once. Then do Day 0.
     </p>
   </header>
 
@@ -90,7 +78,7 @@
     <section class="mb-12">
       <h2 class="text-lg font-bold mb-3 text-white">What you’re building</h2>
       <p class="prose-body mb-3">
-        A small digital product or service with a page people can understand in under ten seconds, and a Stripe link that takes payment. PDF, template, short guide, audit, checklist, or a simple done-for-you setup — it doesn’t have to be complicated.
+        A small digital product or service with a page people can understand in under ten seconds, and a Stripe link that takes payment. PDF, template, short guide, audit, checklist, or a simple done-for-you setup - it doesn’t have to be complicated.
       </p>
       <p class="prose-body">
         The stack is three tools:
@@ -119,7 +107,7 @@
 
     <!-- Accounts first -->
     <section class="mb-12">
-      <h2 class="text-lg font-bold mb-3 text-white">Day 0 — Get the accounts open</h2>
+      <h2 class="text-lg font-bold mb-3 text-white">Day 0 - Get the accounts open</h2>
       <p class="prose-body mb-4">
         Before you design anything, open the three accounts. Do this even if you only finish one today. Momentum matters more than perfection.
       </p>
@@ -152,7 +140,7 @@
           <div>
             <h3 class="font-semibold text-white mb-1">Stripe</h3>
             <p class="prose-body mb-2">
-              Go to <a href="https://dashboard.stripe.com/register" target="_blank" rel="noopener" class="text-emerald-400 hover:underline">Stripe</a> and create an account. Complete the basics so you can create a Payment Link. You don’t need a full store — a single payment link is enough for your first offer.
+              Go to <a href="https://dashboard.stripe.com/register" target="_blank" rel="noopener" class="text-emerald-400 hover:underline">Stripe</a> and create an account. Complete the basics so you can create a Payment Link. You don’t need a full store - a single payment link is enough for your first offer.
             </p>
             <div class="tip">Tip: Start in test mode if you want to practice. When the page looks right, switch to live and create the real link.</div>
           </div>
@@ -164,7 +152,7 @@
     <section class="mb-12">
       <h2 class="text-lg font-bold mb-3 text-white">The pipeline (do it in this order)</h2>
       <p class="prose-body mb-6">
-        Most people fail because they start in the middle — they open Lovable with a vague idea and hope it “looks professional.” We reverse that. Validate → angle → brief → build → payment.
+        Most people fail because they start in the middle - they open Lovable with a vague idea and hope it “looks professional.” We reverse that. Validate → angle → brief → build → payment.
       </p>
 
       <!-- Step 1 -->
@@ -191,13 +179,13 @@
           <h3 class="font-bold text-white">Find the offer angle</h3>
         </div>
         <p class="prose-body mb-3">
-          A market without an angle is just noise. The Offer Angle Finder turns a validated market into 2–3 concrete offer concepts: name, promise, page outline, and a sensible price band.
+          A market without an angle is just noise. The Offer Angle Finder turns a validated market into 2-3 concrete offer concepts: name, promise, page outline, and a sensible price band.
         </p>
         <a href="/ai-pays-off/offer-angle-finder" class="inline-block text-sm font-semibold text-emerald-400 hover:text-emerald-300 border border-emerald-500/40 hover:border-emerald-400 rounded-lg px-4 py-2 transition">
           Open Offer Angle Finder →
         </a>
         <div class="tip mt-4">
-          Pick one angle. Commit for this first build. You can test a second angle later — after you have a live link.
+          Pick one angle. Commit for this first build. You can test a second angle later - after you have a live link.
         </div>
       </div>
 
@@ -220,7 +208,7 @@
           <li>One strong homepage outline</li>
           <li>Headline + subhead options</li>
           <li>What the buyer gets in plain language</li>
-          <li>A short FAQ (3–5 questions)</li>
+          <li>A short FAQ (3-5 questions)</li>
         </ul>
         <div class="tip">
           Tip: If the output feels generic, add constraints: “No hype words. Speak to freelancers who are tired of tool-hopping. Keep sections short.”
@@ -254,10 +242,10 @@
           In the <a href="https://dashboard.stripe.com" target="_blank" rel="noopener" class="text-emerald-400 hover:underline">Stripe Dashboard</a> go to <strong class="text-white">Payment Links</strong> → create a new link. Set the product name, price, and (if you want) a success redirect to a simple thank-you page or a Google Drive delivery folder.
         </p>
         <p class="prose-body mb-3">
-          Copy the payment link. Put it on your page as the main CTA — “Get access,” “Buy the guide,” whatever matches the offer. Test it yourself with a small amount or test mode first.
+          Copy the payment link. Put it on your page as the main CTA - “Get access,” “Buy the guide,” whatever matches the offer. Test it yourself with a small amount or test mode first.
         </p>
         <div class="tip">
-          This is the moment the promise becomes real. A live page + a working payment link is the first win. Post that win in Skool — even if revenue is still zero. Shipping is the signal.
+          This is the moment the promise becomes real. A live page + a working payment link is the first win. Post that win in Skool - even if revenue is still zero. Shipping is the signal.
         </div>
       </div>
 
@@ -294,7 +282,7 @@
     <section class="mb-12">
       <h2 class="text-lg font-bold mb-3 text-white">Bonus: Real Path setup map</h2>
       <p class="prose-body mb-3">
-        If you want the educational map for entity / banking readiness alongside the product path, download the bonus from your thank-you page. Use it as a companion — not a delay. Ship the offer first; structure the business as you go.
+        If you want the educational map for entity / banking readiness alongside the product path, download the bonus from your thank-you page. Use it as a companion - not a delay. Ship the offer first; structure the business as you go.
       </p>
       <a href="/ai-pays-off/thank-you" class="inline-block text-sm font-semibold text-amber-300 hover:text-amber-200 border border-amber-500/40 rounded-lg px-4 py-2 transition">
         Back to thank-you downloads →
