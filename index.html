@@ -145,8 +145,12 @@
       text-decoration: none;
     }
 
-    .nav-links > a:hover {
+    .nav-links > a:not(.button):hover {
       color: var(--e400);
+    }
+
+    .nav-links > .button {
+      color: var(--n950) !important;
     }
 
     .button {

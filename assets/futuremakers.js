@@ -53,6 +53,7 @@
     var currentPath = normalizePath(window.location.pathname);
     document.querySelectorAll("nav a[href]").forEach(function (link) {
       try {
+        if (link.getAttribute("href").startsWith("#")) return;
         var url = new URL(link.href, window.location.origin);
         if (url.origin === window.location.origin && normalizePath(url.pathname) === currentPath) {
           link.setAttribute("aria-current", "page");
