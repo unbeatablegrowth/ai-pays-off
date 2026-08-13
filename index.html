@@ -27,19 +27,6 @@
       --g400: #fbbf24;
       --g500: #f59e0b;
       --muted: #9aa7ba;
-      --fm-bg: #05080f;
-      --fm-bg-deep: #05080f;
-      --fm-panel: #0b111d;
-      --fm-panel-strong: #111827;
-      --fm-panel-soft: #0b111d;
-      --fm-text: #f8fafc;
-      --fm-copy: #cbd5e1;
-      --fm-muted: #9aa7ba;
-      --fm-subtle: #6f7c8f;
-      --fm-accent: #34d399;
-      --fm-accent-soft: rgba(52, 211, 153, 0.11);
-      --fm-accent-border: rgba(52, 211, 153, 0.24);
-      --fm-ink: #05080f;
     }
     * { box-sizing: border-box; }
     body {
@@ -285,6 +272,7 @@
       border: 1px solid rgba(52, 211, 153, 0.22);
       border-radius: 28px;
       background: linear-gradient(145deg, rgba(16, 185, 129, 0.09), rgba(11, 17, 29, 0.74) 46%);
+      text-align: left;
     }
     .list {
       display: grid;
@@ -299,11 +287,13 @@
       display: flex;
       gap: 12px;
       line-height: 1.5;
+      text-align: left;
     }
     .list li::before {
       color: var(--e400);
       content: "✓";
       font-weight: 800;
+      flex-shrink: 0;
     }
     .price {
       display: flex;
@@ -352,6 +342,17 @@
     .final { text-align: center; }
     .final .section-title,
     .final .lede { margin-inline: auto; }
+    /* Blueprint section — centered header over offer card */
+    #blueprint {
+      text-align: center;
+    }
+    #blueprint .section-title,
+    #blueprint .lede {
+      margin-inline: auto;
+    }
+    #blueprint .list li {
+      text-align: left;
+    }
     .footer {
       padding: 38px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.07);
