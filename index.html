@@ -36,6 +36,7 @@
     .menu-toggle{display:none;width:42px;height:42px;padding:0;border:1px solid rgba(255,255,255,.11);border-radius:11px;background:rgba(255,255,255,.025);color:#fff;cursor:pointer}
     .menu-toggle span{display:block;width:18px;height:1.5px;margin:4px auto;border-radius:2px;background:currentColor;transition:transform .2s ease,opacity .2s ease}
     @media(max-width:850px){.nav-inner{position:relative}.menu-toggle{display:block}.nav-links{position:absolute;top:calc(100% + 1px);right:0;left:0;display:grid;gap:0;max-height:0;overflow:hidden;border:0 solid var(--line);border-radius:0 0 16px 16px;background:rgba(5,8,15,.98);box-shadow:0 22px 50px rgba(0,0,0,.4);opacity:0;visibility:hidden;transition:max-height .25s ease,opacity .2s ease,visibility .2s ease}.nav-links.is-open{max-height:280px;border-width:0 1px 1px;opacity:1;visibility:visible}.nav-links>a:not(.button){display:block;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);font-size:.91rem}.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}}
+    .creator-offer{display:grid;grid-template-columns:1.08fr .92fr;gap:0;overflow:hidden;margin-top:52px;border:1px solid rgba(52,211,153,.2);border-radius:28px;background:linear-gradient(145deg,rgba(16,185,129,.08),rgba(11,17,29,.84) 50%);box-shadow:0 32px 90px rgba(0,0,0,.32);text-align:left}.creator-visual{position:relative;min-height:510px;background:#070b12}.creator-visual img{width:100%;height:100%;object-fit:cover}.creator-badge{position:absolute;left:22px;bottom:22px;padding:10px 13px;border:1px solid rgba(255,255,255,.14);border-radius:11px;background:rgba(5,8,15,.84);color:#dce4ed;font-size:.72rem;font-weight:750;backdrop-filter:blur(12px)}.creator-copy{display:flex;flex-direction:column;justify-content:center;padding:48px}.creator-copy h3{margin:6px 0 16px;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:550;letter-spacing:-.05em;line-height:1.02}.creator-copy>p{margin:0;color:#b6c2d0;line-height:1.75}.creator-list{display:grid;gap:10px;margin:24px 0 28px;padding:0;color:#c6d0dc;font-size:.87rem;list-style:none}.creator-list li::before{margin-right:10px;color:var(--e400);content:"✓";font-weight:850}.creator-meta{display:flex;flex-wrap:wrap;align-items:center;gap:11px 18px;margin-top:16px;color:#8491a3;font-size:.75rem}.creator-meta strong{color:var(--g400);font-size:1.05rem}@media(max-width:850px){.creator-offer{grid-template-columns:1fr}.creator-visual{min-height:340px}.creator-copy{padding:34px}}@media(max-width:420px){.creator-copy{padding:24px}.creator-visual{min-height:265px}.creator-badge{right:14px;bottom:14px;left:14px;text-align:center}}
   </style>
   <script defer src="/assets/futuremakers.js"></script>
 </head>
@@ -45,7 +46,7 @@
       <a class="brand" href="/" aria-label="FutureMakers home"><span class="brand-mark" aria-hidden="true">FM</span><span class="brand-name">Future<strong>Makers</strong></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
       <nav id="primary-menu" class="nav-links" aria-label="Primary navigation">
-        <a href="#how">How it works</a><a href="#inside">What you get</a><a href="#faq">FAQ</a>
+        <a href="#how">How it works</a><a href="#inside">What you get</a><a href="/ai-personal-creator">AI Creator</a><a href="#faq">FAQ</a>
       </nav>
     </div>
   </header>
@@ -110,6 +111,28 @@
         <p class="lede">This short walkthrough shows how the pieces connect so you can decide whether the Blueprint fits where you are now.</p>
         <div class="video"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/DwV-gwGZ4BE" data-youtube-src="https://www.youtube.com/embed/DwV-gwGZ4BE" title="A.I. Pays Off — the complete loop" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div></div>
         <div class="proof-note"><strong>A truthful note about proof:</strong> the process can help you create a validated offer, page, and working payment link. Those are necessary business building blocks—not a guarantee of sales or income. Your results will depend on the problem you choose, the quality of the offer, execution, and getting it in front of the right people.</div>
+      </div>
+    </section>
+
+    <section id="ai-creator" class="section rule center">
+      <div class="shell">
+        <p class="eyebrow">Prefer to have the production handled for you?</p>
+        <h2 class="section-title">Meet your consistent AI content creator.</h2>
+        <p class="lede">FutureMakers can develop the creator direction, shape the message, and produce your first three short-form videos—without asking you to learn a complicated stack of generation and editing tools.</p>
+        <div class="creator-offer">
+          <div class="creator-visual">
+            <img src="/futuremakers-creator-system.webp" alt="FutureMakers AI creator identity, wardrobe, environment, and video shot system" loading="lazy" />
+            <span class="creator-badge">Real FutureMakers creator-development work</span>
+          </div>
+          <div class="creator-copy">
+            <p class="eyebrow">AI Personal Creator Launch</p>
+            <h3>One recognizable creator. Three finished videos.</h3>
+            <p>A focused, founder-led production sprint for busy businesses, professionals, and creators who need quality content but do not have time to coordinate every tool themselves.</p>
+            <ul class="creator-list"><li>Creator strategy and visual direction</li><li>Three consistent creator images</li><li>Three short-form scripts</li><li>Three edited vertical videos</li><li>Captions, post copy, and one revision round</li></ul>
+            <a class="button gold" href="/ai-personal-creator">Explore the Creator Sprint</a>
+            <div class="creator-meta"><strong>$497 one-time</strong><span>No subscription</span><span>Target delivery within 14 days of Project Start</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -189,6 +212,7 @@
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="/ai-pays-off/tools">Free tools</a>
         <a href="/ai-pays-off/">A.I. Pays Off</a>
+        <a href="/ai-personal-creator">AI Personal Creator</a>
         <a href="/blog/">Blog</a>
         <a href="https://www.skool.com/ai-pays-off-buyers-3411/about" target="_blank" rel="noopener">Community</a>
         <a href="/terms.html">Terms</a>
