@@ -1,22 +1,22 @@
-FUTUREMAKERS LAUNCH PAGE — SAFE GITHUB UPLOAD
+FUTUREMAKERS MOBILE LAYOUT FIX
 
-Upload these six files to the ROOT of your repository, beside index.html:
+Upload all four files to the MAIN / ROOT level of the GitHub repository.
+Do not place the JPG or MP4 inside the assets folder.
 
-1. ai-personal-creator.html
-2. futuremakers-founder.mp4
-3. futuremakers-founder-poster.jpg
-4. futuremakers-creator-system.webp
-5. futuremakers-yaris.webp
-6. futuremakers-jenny.webp
+1. index.html
+   Replaces the homepage.
 
-Important:
-- Do not upload or replace the existing assets folder.
-- None of these filenames should replace your current homepage or legal pages.
-- On GitHub, open the repository root, choose Add file > Upload files, and select
-  the six individual files listed above.
-- Before committing, confirm that index.html does NOT appear under "Changes".
-- Commit the upload, wait for Cloudflare Pages to deploy, then visit:
-  https://futuremakers.dev/ai-personal-creator.html
+2. ai-personal-creator.html
+   Replaces the AI Personal Creator page.
 
-The page expects all five media files in the same root folder as the HTML file.
+3. ai-spokesperson-showcase-poster.jpg
+   Shared poster used by both pages.
 
+4. futuremakers-ai-spokesperson-showcase.mp4
+   Full 46-second audio-balanced showcase video.
+
+Keep every filename exactly as shown, including capitalization.
+
+After GitHub finishes deploying, refresh the site without using the old cache.
+On Android Chrome, close the tab and reopen the page if a normal refresh still
+shows the previous broken poster or 0:00 video player.

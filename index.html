@@ -26,13 +26,14 @@
   </style>
   <style>
     @font-face{font-family:"Manrope";src:url("/assets/Manrope-Variable.ttf?v=2") format("truetype-variations");font-weight:200 800;font-style:normal;font-display:swap}
+    html{scroll-padding-top:82px;overflow-x:hidden}body{overflow-x:hidden}
     body{font-weight:390;font-variation-settings:"wght" 390}.brand{display:flex;align-items:center;gap:10px;color:#fff;font-size:1.08rem;font-weight:650;font-variation-settings:"wght" 650;letter-spacing:-.04em;text-decoration:none}.brand-mark{display:grid;width:30px;height:30px;place-items:center;border:1px solid rgba(52,211,153,.3);border-radius:9px;background:rgba(52,211,153,.1);color:var(--e400);font-size:.76rem;font-weight:700;font-variation-settings:"wght" 700}.brand-word strong{color:var(--e400);font-weight:650}
     .nav-menu{position:relative}.nav-menu summary{display:grid;width:46px;height:46px;place-items:center;border:1px solid rgba(52,211,153,.22);border-radius:13px;background:rgba(16,185,129,.055);cursor:pointer;list-style:none}.nav-menu summary::-webkit-details-marker{display:none}.hamburger{position:relative;width:21px;height:14px}.hamburger::before,.hamburger::after,.hamburger span{position:absolute;left:0;width:21px;height:2px;border-radius:2px;background:#f8fafc;content:"";transition:transform .2s ease,top .2s ease,opacity .2s ease}.hamburger::before{top:0}.hamburger span{top:6px}.hamburger::after{top:12px}.nav-menu[open] .hamburger::before{top:6px;transform:rotate(45deg)}.nav-menu[open] .hamburger span{opacity:0}.nav-menu[open] .hamburger::after{top:6px;transform:rotate(-45deg)}.menu-panel{position:absolute;top:56px;right:0;width:min(310px,calc(100vw - 28px));padding:10px;border:1px solid rgba(52,211,153,.2);border-radius:18px;background:rgba(8,13,22,.98);box-shadow:0 25px 70px rgba(0,0,0,.5);backdrop-filter:blur(18px)}.menu-panel a{display:flex;align-items:center;justify-content:space-between;min-height:48px;padding:0 14px;border-radius:11px;color:#c9d3df;font-size:.88rem;font-weight:700;text-decoration:none}.menu-panel a:hover,.menu-panel a:focus-visible{background:rgba(52,211,153,.09);color:var(--e400);outline:none}.menu-panel a::after{color:#657286;content:"→"}.menu-panel .menu-cta{margin-top:6px;background:linear-gradient(135deg,var(--g400),var(--g500));color:var(--n950)}.menu-panel .menu-cta:hover,.menu-panel .menu-cta:focus-visible{background:linear-gradient(135deg,#fcd34d,var(--g400));color:var(--n950)}.menu-panel .menu-cta::after{color:inherit}
     .title{font-weight:470;font-variation-settings:"wght" 470}.section-title{font-weight:500;font-variation-settings:"wght" 500}.lede{font-weight:380;font-variation-settings:"wght" 380}.recognition{font-weight:370;font-variation-settings:"wght" 370}.hero-card h2,.offer h3,.fit h3,.card h3{font-weight:520;font-variation-settings:"wght" 520}.quote{font-weight:520;font-variation-settings:"wght" 520}.button,.eyebrow,.tag,.number{font-variation-settings:"wght" 800}
     .creator-spotlight{overflow:hidden;background:radial-gradient(circle at 18% 40%,rgba(16,185,129,.12),transparent 34rem)}
     .creator-panel{display:grid;grid-template-columns:1.08fr .92fr;align-items:stretch;overflow:hidden;border:1px solid rgba(52,211,153,.18);border-radius:30px;background:linear-gradient(145deg,rgba(16,185,129,.055),rgba(11,17,29,.88) 52%);box-shadow:0 34px 90px rgba(0,0,0,.3);text-align:left}
-    .creator-media{position:relative;min-height:480px;background:#070b12}
-    .creator-media img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .creator-media{position:relative;min-height:0;aspect-ratio:16/9;background:linear-gradient(135deg,rgba(16,185,129,.13),#070b12 55%)}
+    .creator-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
     .creator-media::after{position:absolute;inset:0;background:linear-gradient(90deg,transparent 62%,rgba(5,8,15,.58));content:"";pointer-events:none}
     .creator-proof{position:absolute;left:22px;bottom:22px;z-index:1;padding:10px 13px;border:1px solid rgba(255,255,255,.14);border-radius:11px;background:rgba(5,8,15,.86);color:#dce4ed;font-size:.72rem;font-weight:750;backdrop-filter:blur(12px)}
     .creator-copy{display:flex;flex-direction:column;justify-content:center;padding:52px}
@@ -49,8 +50,8 @@
       .fm-motion-ready .creator-media[data-fm-reveal].fm-in-view img{transform:scale(1)}
       .fm-motion-ready .creator-copy[data-fm-reveal]{transition-delay:.14s}
     }
-    @media(max-width:850px){.creator-panel{grid-template-columns:1fr}.creator-media{min-height:340px}.creator-media::after{background:linear-gradient(0deg,rgba(5,8,15,.35),transparent 45%)}.creator-copy{padding:36px}}
-    @media(max-width:420px){.creator-media{min-height:250px}.creator-copy{padding:25px}.creator-proof{right:14px;bottom:14px;left:14px;text-align:center}.brand{font-size:1rem}.brand-mark{width:29px;height:29px}.nav-menu summary{width:43px;height:43px}}
+    @media(max-width:850px){.section{padding:62px 0}.hero{padding:58px 0 54px}.title{font-size:clamp(2.35rem,10.8vw,3.35rem);line-height:1}.recognition{margin-top:21px}.trust{margin-top:27px}.hero-card{margin-top:38px;gap:26px}.creator-panel{grid-template-columns:1fr}.creator-media{min-height:0;aspect-ratio:16/9}.creator-media::after{background:linear-gradient(0deg,rgba(5,8,15,.35),transparent 45%)}.creator-copy{padding:32px}.menu-panel{max-height:calc(100dvh - 90px);overflow-y:auto}}
+    @media(max-width:420px){.shell{width:calc(100% - 28px)}.section{padding:54px 0}.hero{padding:48px 0 48px}.title{font-size:2.28rem;letter-spacing:-.052em;line-height:1.02}.lede{margin-top:20px;font-size:.96rem;line-height:1.62}.recognition{font-size:.91rem;line-height:1.65}.actions{margin-top:28px}.trust{gap:10px}.hero-card{padding:20px;margin-top:32px}.creator-copy{padding:24px}.creator-copy h2{font-size:2rem}.creator-proof{right:12px;bottom:12px;left:12px;padding:8px 10px;text-align:center}.brand{font-size:1rem}.brand-mark{width:29px;height:29px}.nav-menu summary{width:43px;height:43px}}
   </style>
   <script defer src="/assets/futuremakers.js"></script>
 </head>
@@ -98,7 +99,7 @@
       <div class="shell">
         <div class="creator-panel">
           <div class="creator-media" data-fm-reveal>
-            <img src="/assets/ai-spokesperson-showcase-poster.jpg" alt="A realistic AI spokesperson presenting from a professional creator studio" loading="lazy" width="1600" height="914" />
+            <img src="/ai-spokesperson-showcase-poster.jpg" alt="A realistic AI spokesperson presenting from a professional creator studio" loading="lazy" width="1600" height="914" onerror="this.hidden=true" />
             <span class="creator-proof">Created by Futuremakers · Real campaign concept</span>
           </div>
           <div class="creator-copy" data-fm-reveal>
