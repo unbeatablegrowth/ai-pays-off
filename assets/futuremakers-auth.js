@@ -40,14 +40,27 @@
     var email = String(new FormData(form).get("email") || "").trim();
     if (!email) return setMessage("Enter your email address first.", "error");
     var button = form.querySelector("button[type='submit']");
+    var originalLabel = button.textContent;
     button.disabled = true;
+    button.classList.remove("is-sent");
+    button.textContent = "Sending secure link…";
     setMessage("Sending your secure sign-in link…", "info");
     var callback = window.location.origin + "/auth-callback?next=" + encodeURIComponent(safeNext());
     var result = await client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: callback, shouldCreateUser: true } });
-    button.disabled = false;
-    if (result.error) return setMessage(result.error.message, "error");
+    if (result.error) {
+      button.disabled = false;
+      button.textContent = originalLabel;
+      return setMessage(result.error.message, "error");
+    }
     form.reset();
+    button.classList.add("is-sent");
+    button.textContent = "Sign-in link sent — check your email ✓";
     setMessage("Check your email. Your secure sign-in link is on its way.", "success");
+    window.setTimeout(function () {
+      button.disabled = false;
+      button.classList.remove("is-sent");
+      button.textContent = "Send another sign-in link";
+    }, 30000);
   }
 
   async function finishCallback() {
