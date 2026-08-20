@@ -148,6 +148,18 @@
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape" && root.classList.contains("is-open")) setOpen(false);
     });
+
+    var footer = document.querySelector(".footer, footer");
+    if (footer && "IntersectionObserver" in window) {
+      var footerObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          root.classList.toggle("is-footer-visible", entry.isIntersecting);
+          document.body.classList.toggle("fm-footer-safe", entry.isIntersecting);
+        });
+      }, { threshold: 0.08 });
+      footerObserver.observe(footer);
+    }
+
     render(page === "support" ? "support" : "start");
   }
 
