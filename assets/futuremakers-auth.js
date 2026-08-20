@@ -82,8 +82,12 @@
       return null;
     }
     var user = result.data.session.user;
-    document.querySelectorAll("[data-user-email]").forEach(function (node) {
-      node.textContent = user.email || "FutureMaker";
+    var metadata = user.user_metadata || {};
+    var displayName = metadata.full_name || metadata.name || metadata.user_name || metadata.preferred_username || "";
+    if (!displayName && user.email) displayName = user.email.split("@")[0];
+    displayName = String(displayName || "FutureMaker").trim().split(/\s+/)[0];
+    document.querySelectorAll("[data-user-name]").forEach(function (node) {
+      node.textContent = displayName;
     });
     document.documentElement.classList.add("fm-auth-ready");
     return { client: client, user: user };
