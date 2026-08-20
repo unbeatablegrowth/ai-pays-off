@@ -51,7 +51,7 @@
         title: "You only need one believable first step.",
         copy: "Use the free checklist to identify what you know, who it could help, and the smallest useful thing you could build. No purchase is required.",
         actions: [
-          ["Start with the free checklist", "https://ai-pays-off.kit.com/e182e1d4fc", "primary"],
+          ["Open your free guide hub", "/login?next=/free-hub", "primary"],
           ["Explore the free tools", "/ai-pays-off/tools", "secondary"]
         ],
         choices: [["Show me the other paths", "start"]]
@@ -60,7 +60,7 @@
         eyebrow: "Your first step",
         title: "Find the useful idea hiding in what you already know.",
         copy: "The free checklist helps you move from scattered possibilities to one idea worth testing.",
-        actions: [["Get the free checklist", "https://ai-pays-off.kit.com/e182e1d4fc", "primary"]],
+        actions: [["Create a free guide account", "/login?next=/free-hub", "primary"]],
         choices: [["I want the complete build path", "blueprint"], ["Go back", "build"]]
       },
       blueprint: {
